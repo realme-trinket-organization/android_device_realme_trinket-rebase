@@ -27,5 +27,9 @@
 #
 #
 
+on boot
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 on init && property:ro.boot.hwc=Global_NFC && property:ro.boot.product.hardware.sku=nfc_ese
     setprop ro.boot.product.hardware.sku nfc
