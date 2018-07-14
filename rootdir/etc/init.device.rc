@@ -38,6 +38,9 @@ on boot
     setprop persist.vendor.ctm.disallowed 1
     #endif
 
+    # OTG
+    write /sys/class/power_supply/usb/otg_switch 1
+
 on charger
     #ifdef VENDOR_EDIT
     #shanliangliang@BSP.CHG.Basic, 2020/03/09, start hvdcp_opti when in poweroff mode
