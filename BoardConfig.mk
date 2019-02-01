@@ -181,7 +181,7 @@ VENDOR_SECURITY_PATCH := 2022-09-05
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 include hardware/oppo/sepolicy/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+PRODUCT_PRIVATE_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += \
     $(DEVICE_PATH)/sepolicy/vendor
