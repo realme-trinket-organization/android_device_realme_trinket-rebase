@@ -5,6 +5,9 @@ persist.vendor.btstack.aac_frm_ctl.enabled=true
 persist.vendor.service.bt.iot.enablelogging=true
 persist.vendor.service.bt.iotinfo.report.enable=true
 
+# Charger
+ro.charger.enable_suspend=true
+
 # CNE
 persist.vendor.cne.feature=1
 
