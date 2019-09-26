@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.realme_trinket
+
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
