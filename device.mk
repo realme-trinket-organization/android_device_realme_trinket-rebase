@@ -420,6 +420,10 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl \
     sound_trigger.primary.trinket
 
+# Tethering
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
