@@ -3460,7 +3460,7 @@ vendor/etc/thermal-engine.conf|1721adec8d87b35e17fb1a52b3346a67a2006704
 vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
 
 # Time services
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um
+-vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
