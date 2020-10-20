@@ -145,9 +145,6 @@ ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_realme_trinket
 TARGET_RECOVERY_DEVICE_MODULES := libinit_realme_trinket
 
-# Keystore
-TARGET_PROVIDES_KEYMASTER := true
-
 # Media
 TARGET_DISABLED_UBWC := true
 
