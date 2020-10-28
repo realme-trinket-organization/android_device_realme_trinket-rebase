@@ -19,10 +19,8 @@ tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-persist.bluetooth.a2dp_offload.disabled=false
-ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.bluetooth.modem_nv_support=true
+persist.vendor.btstack.aac_frm_ctl.enabled=true
 
 # Camera
 ro.build.flavor=trinket-user
