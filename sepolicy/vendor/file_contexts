@@ -8,3 +8,5 @@
 
 # Thermal
 /data/vendor/thermal(/.*)?                      u:object_r:thermal_data_file:s0
+
+/bt_firmware(/.*)?                              u:object_r:bt_firmware_file:s0
