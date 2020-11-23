@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.trinket \
     memtrack.trinket \
     libdisplayconfig.qti \
-    liboverlay \
     libtinyxml \
     libvulkan \
     libqdMetaData \
