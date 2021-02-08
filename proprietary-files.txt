@@ -2736,7 +2736,6 @@ vendor/lib64/libcpion.so
 vendor/lib64/librmp.so
 
 # Display
-vendor/etc/SVIConfig_19631.xml
 vendor/etc/qdcm_calib_data_ili9881h_hdp_video_innolux_inx_panel.xml
 vendor/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_gg3_panel.xml
 vendor/etc/qdcm_calib_data_ili9881h_hdp_video_truly_auo_panel.xml
