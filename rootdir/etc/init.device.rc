@@ -31,5 +31,29 @@ on boot
     # OTG
     write /sys/class/power_supply/usb/otg_switch 1
 
+    # Touchpanel
+    write /proc/touchpanel/double_tap_enable 1
+
+    # Add for touchscreen firmware update check
+    write /proc/touchpanel/tp_fw_update 1
+
+    # Enable oppo's touchpanel direction
+    write /proc/touchpanel/oppo_tp_direction 1
+
+    # Enable oppo's touchpanel game mode
+    write /proc/touchpanel/game_switch_enable 1
+
+on early-init
+    chown system system /proc/touchpanel/oppo_tp_limit_enable
+    chmod 0666 /proc/touchpanel/oppo_tp_limit_enable
+    chown system system /proc/touchpanel/oppo_tp_direction
+    chmod 0666 /proc/touchpanel/oppo_tp_direction
+    chown system system /proc/touchpanel/game_switch_enable
+    chmod 0666 /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0666 /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/tp_fw_update
+    chmod 0666 /proc/touchpanel/tp_fw_update
+
 on init && property:ro.boot.hwc=Global_NFC && property:ro.boot.product.hardware.sku=nfc_ese
     setprop ro.boot.product.hardware.sku nfc
