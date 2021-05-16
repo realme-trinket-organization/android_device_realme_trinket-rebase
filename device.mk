@@ -443,9 +443,8 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH) \
     hardware/oppo
-
-QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
