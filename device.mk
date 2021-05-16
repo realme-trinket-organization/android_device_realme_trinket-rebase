@@ -452,7 +452,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.1.vendor
 
 # Soong namespaces
-QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
