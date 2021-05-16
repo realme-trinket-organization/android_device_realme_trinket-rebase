@@ -142,8 +142,6 @@ PRODUCT_PACKAGES += \
 
 # Display interfaces
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.display.composer@1.0.vendor \
-    vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
 # DRM
