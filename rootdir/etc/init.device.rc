@@ -45,6 +45,7 @@ on charger
     #shanliangliang@BSP.CHG.Basic, 2020/03/09, add for fixing poweroff alarm issue
     start vendor.power_off_alarm
     #endif
+    start vendor.health-hal-2-0
 
 on early-boot
     #ifdef VENDOR_EDIT
