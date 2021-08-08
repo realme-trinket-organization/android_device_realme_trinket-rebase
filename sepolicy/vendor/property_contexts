@@ -5,21 +5,8 @@ audio_hal.in_period_size                u:object_r:vendor_default_prop:s0
 audio_hal.period_multiplier             u:object_r:vendor_default_prop:s0
 persist.audio.fluence.voicecomm         u:object_r:vendor_default_prop:s0
 
-# Camera
-cameradaemon.SaveMemAtBoot              u:object_r:vendor_default_prop:s0
-cpp.set.clock                           u:object_r:vendor_default_prop:s0
-disable.cpp.power.collapse              u:object_r:vendor_default_prop:s0
-vendor.camera.                          u:object_r:vendor_camera_prop:s0
-vidc.enc.dcvs.extra-buff-count          u:object_r:vendor_default_prop:s0
-
 # Media
 gpu.stats.debug.level                   u:object_r:vendor_default_prop:s0
-
-# RIL
-ro.build.software.version               u:object_r:exported_radio_prop:s0
-ro.fota.oem                             u:object_r:exported_radio_prop:s0
-ro.miui.                                u:object_r:exported_radio_prop:s0
-ro.product.mod_device                   u:object_r:exported_radio_prop:s0
 
 # Thermal engine
 persist.sys.thermal.                    u:object_r:thermal_engine_prop:s0
