@@ -123,6 +123,9 @@ persist.vendor.pps.disallowed=1
 persist.vendor.std_pd.disallowed=1
 persist.vendor.tb.disallowed=1
 
+# Notch
+ro.support_hide_display_cutout=true
+
 # PASR
 vendor.power.pasr.enabled=false
 

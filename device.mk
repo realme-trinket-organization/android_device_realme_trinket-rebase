@@ -292,6 +292,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage/packages/apps/Snap
 
 PRODUCT_PACKAGES += \
+    AvoidAppsInCutoutOverlay \
     NoCutoutOverlay
 
 # Power
