@@ -109,7 +109,6 @@ telephony.lteOnCdmaDevice=1
 debug.renderengine.backend=threaded
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
 persist.sys.sf.color_saturation=1.0
 
 # Time
