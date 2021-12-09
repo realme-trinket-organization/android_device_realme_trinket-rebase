@@ -3291,7 +3291,6 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
 # Radio - from CAP_sprout 00WW_3_490
-system_ext/app/datastatusnotification/datastatusnotification.apk|a385a0b1ae350cc5631e88b218941ac8a99378fb
 system_ext/framework/qti-telephony-common.jar|c524b5891e95f2835705f0b5294974fa68221477
 
 # Radio (IMS)
