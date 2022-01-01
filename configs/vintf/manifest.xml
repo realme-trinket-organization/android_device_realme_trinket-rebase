@@ -163,11 +163,6 @@
         <fqname>@1.0::IHypnusUtil/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.oppo.hardware.ktv</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IKtv/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.oppo.hardware.radio.opporadio</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IOppoRadio/oppo_slot1</fqname>

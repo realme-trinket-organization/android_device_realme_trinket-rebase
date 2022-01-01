@@ -3009,12 +3009,6 @@ vendor/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so
 vendor/lib64/libhypnusclient.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 
-# Oppo (Ktv)
-vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service
-vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc
-vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so
-vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
-
 # Pasr - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|fd77dd9d01e14486b49d1f926607d3e9b15d9b8a
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adce145bae9a609e5141bc0
