@@ -45,7 +45,7 @@ vendor/lib/rfsa/adsp/dirac_resource.dar
 vendor/lib/rfsa/adsp/libdirac-capiv2.so
 
 # Alarm - from laurel_sprout V12.0.26.0.RFQMIXM
--product/app/PowerOffAlarm/PowerOffAlarm.apk|777f40db11a7bac9cb030e9254a894ed574f19d5
+product/app/PowerOffAlarm/PowerOffAlarm.apk|777f40db11a7bac9cb030e9254a894ed574f19d5
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|6f58edbe898a0582b02b688ec8a47a57a50707ec
 vendor/bin/power_off_alarm|a22dad49a912473d92bf9c111ef7de6dd927b6f2
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|a03a9a1c818595b19272ea6ffb466e23a7fc3b05
@@ -2546,7 +2546,7 @@ vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_xinli_s5kgm1_eeprom.so
 
 # Certificate Authority - from laurel_sprout V12.0.26.0.RFQMIXM
--vendor/app/CACertService/CACertService.apk|0530d69b3abbfe64c1c75a6c914a44600e9d102b
+vendor/app/CACertService/CACertService.apk|0530d69b3abbfe64c1c75a6c914a44600e9d102b
 vendor/lib64/libcacertclient.so|90281ef665d6a66ad7aa0806d97c20866fe1a83d
 vendor/lib64/libjnihelper.so|fb8690fbb5b8fbb97ded1bd8d4f87285ec74cf41
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d6c51a8a
@@ -2598,8 +2598,8 @@ system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so|43fba46bad5655442aad
 system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so|01d9ef55a8f99544259b102394254c9cb569b0b9
 system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so|638e86dd871ebf37517c5f29ce5c65e95f36ffdf
 system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so|2539aeaa17eb862d6c92012341c469fd8f00bbe8
--vendor/app/CneApp/CneApp.apk|f7c349400fff413f62edf7d38722a1f471db7ba1
--vendor/app/IWlanService/IWlanService.apk|eeb58fabd1b8c9b913089f57d80c54d0da55d0de
+vendor/app/CneApp/CneApp.apk|f7c349400fff413f62edf7d38722a1f471db7ba1
+vendor/app/IWlanService/IWlanService.apk|eeb58fabd1b8c9b913089f57d80c54d0da55d0de
 vendor/bin/cnd|b92a42f984baadda44965ab47849daad2c322b46
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -2682,7 +2682,7 @@ system_ext/lib64/libdpmfdmgr.so|bd1bbd376c2bdfac2f3a4c230ce65cd35cb1c6bd
 system_ext/lib64/libdpmframework.so|67ebd736333ae7158632735e3db06a4f9664f6a6
 system_ext/lib64/libdpmtcm.so|ddef98d55e3045ebac458b38165acd5d2f75cd7a
 system_ext/lib64/vendor.qti.diaghal@1.0.so|d8710234e3a959f14f93cd4069b0fef8a18a5683
--system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|0c9ae46c82d1777808b8d99591b0026e2dd20375
+system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|0c9ae46c82d1777808b8d99591b0026e2dd20375
 vendor/bin/dpmQmiMgr|4fe936478b0da1ee20c6222234b80d478a72cc2a
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
@@ -2691,7 +2691,7 @@ vendor/lib64/libdpmqmihal.so|ffcd85e1f6bf7d54f37953edc2cb2c4a61fc894a
 # DRM (Widevine) - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|92e4797cb000e86ba74fba9da2c014d7ec8fa1a6
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c1b1429e90b04ff96ebf60
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 vendor/lib64/mediadrm/libwvdrmengine.so|f51178c7ffc945236566ed828ede4935cc0c343b
 vendor/lib64/libbase64.so|caba4e42499d8e53e80c5e05313a36058ae5123e
 vendor/lib64/librmp.so|176aed768090f0c8b48cb6ad9e397b35f128b2a5
@@ -2766,8 +2766,8 @@ vendor/bin/xtra-daemon|5ef4c898cd014686bb9f487dde2468deccfaef1c
 vendor/bin/xtwifi-client|0d67893b2fadea9513770d6964887d435611a880
 vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
 vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
--vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
 vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|6a84a99f65e81434eefb666deffe175ca113c8be
@@ -2977,7 +2977,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so|99f7054e5a0e9eb214e27cf034785bc44618
 # Neuralnetwork - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|8aad7a37ff8a32e2b81fa33ae7664e32df5f44ae
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
 vendor/lib64/libhexagon_nn_stub.so|a3676113882842116279fe902af00e630ec1778c
 vendor/lib64/unnhal-acc-adreno.so|2ad4f8619d509a81a00a5841fa3513b1c85fc9a9
 vendor/lib64/unnhal-acc-common.so|32fdec585f2d710e37ffe327894aec6a7ea220eb
@@ -3135,8 +3135,8 @@ vendor/lib64/libqmi_encdec.so
 vendor/lib64/libqmiservices.so
 
 # Radio
--product/app/QtiTelephonyService/QtiTelephonyService.apk
--product/app/embms/embms.apk
+product/app/QtiTelephonyService/QtiTelephonyService.apk
+product/app/embms/embms.apk
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -3144,7 +3144,7 @@ product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/hw/qcrild
 vendor/bin/ATFWD-daemon
 vendor/bin/netmgrd
@@ -3275,13 +3275,13 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
 # Radio - from laurel_sprout V12.0.26.0.RFQMIXM
--system_ext/app/datastatusnotification/datastatusnotification.apk|6ccc42cab86e30dfd6d3d1ca6e87310c408ccb58
+system_ext/app/datastatusnotification/datastatusnotification.apk|6ccc42cab86e30dfd6d3d1ca6e87310c408ccb58
 system_ext/framework/qti-telephony-common.jar|f9f92bfd882cba6bca8feea7f2b5141f3d3a434b
 
 # Radio (IMS)
 etc/permissions/com.qualcomm.qti.imscmservice.xml
--product/app/imssettings/imssettings.apk
--product/app/uceShimService/uceShimService.apk
+product/app/imssettings/imssettings.apk
+product/app/uceShimService/uceShimService.apk
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml
@@ -3351,7 +3351,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # Radio (IMS) - from phhusson
--product/priv-app/ims/ims.apk|7e7ceab1d2843dd71c920ae77587132c76763313
+product/priv-app/ims/ims.apk|7e7ceab1d2843dd71c920ae77587132c76763313
 
 # Sensors
 vendor/bin/init.qcom.sensors.sh
@@ -3432,7 +3432,7 @@ vendor/lib64/android.hardware.sensors@2.0-impl.so
 # Servicetracker - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|e9c628464a9979c52b473db0f747244255d338be
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
--vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
+vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|1a89d213aa916091553da5d0dccaed45594c706e
 
 # Snapdragon Computer Vision Engine
@@ -3496,7 +3496,7 @@ vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
 vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services - from laurel_sprout V12.0.26.0.RFQMIXM
--vendor/app/TimeService/TimeService.apk|e57cf01cd971570b1962914b2537d82d955dfe1f
+vendor/app/TimeService/TimeService.apk|e57cf01cd971570b1962914b2537d82d955dfe1f
 vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
