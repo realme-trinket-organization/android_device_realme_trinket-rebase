@@ -53,9 +53,6 @@ rights reserved
           <item>"7,1"</item>
      </string-array>
 
-     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
-     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
-
      <!-- If this is true, the screen will come on when you plug/unplug usb/power/whatever. -->
      <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -168,9 +165,6 @@ rights reserved
 
      <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
      <bool name="config_supportAudioSourceUnprocessed">true</bool>
-
-     <!-- Boolean indicating if current platform supports HFP inband ringing -->
-     <bool name="config_bluetooth_hfp_inband_ringing_support">true</bool>
 
      <!-- Enable overlay for all location components. -->
      <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
