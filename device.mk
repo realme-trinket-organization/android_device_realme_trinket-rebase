@@ -83,9 +83,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
-
-PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service
 
@@ -309,8 +306,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(DEVICE_PATH)/overlay-lineage/lineage-sdk \
-    $(DEVICE_PATH)/overlay-lineage/packages/apps/Snap
+    $(DEVICE_PATH)/overlay-lineage/lineage-sdk
 
 PRODUCT_PACKAGES += \
     AvoidAppsInCutoutOverlay \
