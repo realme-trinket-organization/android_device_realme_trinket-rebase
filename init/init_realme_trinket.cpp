@@ -77,12 +77,11 @@ void check_device()
         heapminfree = "8m";
         heapmaxfree = "16m";
     } else {
-        // from - phone-xhdpi-2048-dalvik-heap.mk
         heapstartsize = "8m";
-        heapgrowthlimit = "192m";
+        heapgrowthlimit = "256m";
         heapsize = "512m";
         heaptargetutilization = "0.75";
-        heapminfree = "512k";
+        heapminfree = "2m";
         heapmaxfree = "8m";
     }
 }
