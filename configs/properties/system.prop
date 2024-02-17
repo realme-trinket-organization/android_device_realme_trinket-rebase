@@ -120,5 +120,4 @@ persist.sys.sf.color_saturation=1.0
 persist.timed.enable=true
 
 # WiFi Display
-persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
