@@ -2994,7 +2994,7 @@ vendor/lib64/unnhal-acc-common.so|e37d2113f99506f1de85902a0fdee0b443342942
 vendor/lib64/unnhal-acc-hvx.so|3f61cfe064965ea1a5fc288b133da1802d36b608
 
 # NFC
-vendor/lib/libpn553_fw.so
+vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so
 
 # Oppo (Hypnus)
 vendor/bin/hw/vendor.oppo.hardware.hypnus@1.0-service
