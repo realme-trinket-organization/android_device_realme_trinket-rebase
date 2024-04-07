@@ -144,23 +144,6 @@ on boot
 # Displayfeature for android_one
     chown system system /sys/class/backlight/panel0-backlight/brightness_clone
 
-# access permissions for FPC service
-    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
-    chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
-
-#bug434109 add for goodix fingerprint huangfusheng.wt 20190319
-   mkdir /data/vendor/goodix
-   chmod 0777 /data/vendor/goodix
-   chown system system /data/vendor/goodix
-   mkdir /data/vendor/goodix/gf_data
-   mkdir /data/vendor/goodix/gf_cali
-   mkdir /data/vendor/goodix/factory_test
-   chown system system /data/vendor/goodix/gf_data
-   chown system system /data/vendor/goodix/gf_cali
-   chown system system /data/vendor/goodix/factory_test
-   chmod 0777 /sys/class/drm/card0-DSI-1/disp_param
-   chmod 0777 /sys/class/touch/tp_dev/fod_status
-   chown system system /sys/class/drm/card0-DSI-1/disp_param
 #bug 440056  permission add for lcd   zhangxiaolong.wt 20190425
    chmod 0660 /sys/class/drm/card0-DSI-1/acl
    chown system system /sys/class/drm/card0-DSI-1/acl
