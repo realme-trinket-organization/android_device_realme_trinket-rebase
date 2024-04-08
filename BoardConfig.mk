@@ -144,8 +144,10 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 
 ODM_MANIFEST_SKUS += \
+    egis \
     nfc
 
+ODM_MANIFEST_EGIS_FILES := $(DEVICE_PATH)/configs/manifests/manifest_egis.xml
 ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
 
 # Init
