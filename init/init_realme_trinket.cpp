@@ -164,6 +164,22 @@ void vendor_load_device_properties()
     LOG(ERROR) << "Found device project '" << device_project.c_str() << "' operator '" << device_operator.c_str() << "` setting build properties for '" << device.c_str() << "' device\n";
 }
 
+void vendor_set_fingerprint_device()
+{
+    std::ifstream fpPath("/proc/fp_id");
+    std::string fpid;
+    std::string fp_device;
+
+    getline(fpPath, fpid);
+
+    if (fpid == "E_520")
+        fp_device = "egis";
+    else
+        fp_device = "fpc";
+
+    property_override_device("ro.fingerprint.device", fp_device.c_str());
+}
+
 void vendor_load_properties()
 {
     check_device();
@@ -176,4 +192,5 @@ void vendor_load_properties()
     property_set("dalvik.vm.heapmaxfree", heapmaxfree);
 
     vendor_load_device_properties();
+    vendor_set_fingerprint_device();
 }
