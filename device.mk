@@ -88,10 +88,7 @@ PRODUCT_PACKAGES += \
     Snap
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.4 \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
-    android.hardware.camera.provider@2.5 \
     libdng_sdk.vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0
@@ -139,7 +136,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0.vendor \
-    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@1.0.vendor \
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -263,6 +260,10 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.0 \
     libandroid_net \
     netutils-wrapper-1.0
+
+# Neural Network
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.2.vendor
 
 # NFC
 PRODUCT_SOONG_NAMESPACES += \
@@ -427,10 +428,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(DEVICE_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
-# Sensors
+# Servicetracker
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service
+    vendor.qti.hardware.servicetracker@1.1.vendor
 
 # Soong namespaces
 QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)

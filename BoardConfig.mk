@@ -202,7 +202,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2020-07-01
+VENDOR_SECURITY_PATCH := 2022-09-05
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
