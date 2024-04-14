@@ -97,12 +97,8 @@ void property_override_device(char const prop[], char const value[], bool add = 
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
 
-void vendor_load_device_properties()
+void set_device_info(const std::string device, const std::string model, const std::string board_id)
 {
-    std::string device_region;
-    std::string device_hwversion;
-    std::string device;
-
     const auto set_ro_build_prop = [](const std::string &source,
             const std::string &prop, const std::string &value) {
         auto prop_name = "ro." + source + "build." + prop;
@@ -115,21 +111,57 @@ void vendor_load_device_properties()
         property_override_device(prop_name.c_str(), value.c_str(), false);
     };
 
-    device_region = GetProperty("ro.boot.hwc", "");
-    device_hwversion = GetProperty("ro.boot.hwversion", "");
-    if (device_region == "Global_B" && (device_hwversion == "18.31.0" || 
-        device_hwversion == "18.39.0" || device_hwversion == "19.39.0")) {
-        property_override_device("ro.build.description", "willow-user 10 QKQ1.200114.002 V12.0.1.0.QCXMIXM release-keys");
-        for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "xiaomi/willow/willow:10/QKQ1.200114.002/V12.0.1.0.QCXMIXM:user/release-keys");
-            set_ro_product_prop(source, "device", "willow");
-            set_ro_product_prop(source, "model", "Redmi Note 8T");
-            set_ro_product_prop(source, "name", "willow");
+    for (const auto &source : ro_props_default_source_order) {
+        set_ro_build_prop(source, "fingerprint", "realme/" + device + "/" + device + ":10/QKQ1.200209.002/1642670490:user/release-keys");
+
+        set_ro_product_prop(source, "device", device);
+        set_ro_product_prop(source, "model", model);
+        set_ro_product_prop(source, "name", device);
+    }
+
+    property_override_device("ro.separate.soft", board_id.c_str());
+}
+
+void vendor_load_device_properties()
+{
+    std::ifstream prjPath("/proc/oppoVersion/prjVersion");
+    std::ifstream opPath("/proc/oppoVersion/operatorName");
+    std::string device_project;
+    std::string device_operator;
+    std::string device;
+
+    getline(prjPath, device_project);
+    getline(opPath, device_operator);
+    if (device_project == "19631") {
+        if (device_operator == "1") {
+            set_device_info("RMX1925", "realme 5s", "19630");
+        } else if (device_operator == "2") {
+            set_device_info("RMX1911", "realme 5", "19631");
+        } else if (device_operator == "6") {
+            set_device_info("RMX1911", "realme 5", "19641");
+        } else if (device_operator == "7") {
+            set_device_info("RMX1919", "realme 5", "19647");
+        } else if (device_operator == "8") {
+            set_device_info("RMX1929", "realme 5", "19648");
+        } else if (device_operator == "9") {
+            set_device_info("RMX1925", "realme 5s", "19642");
+        }
+    } else if (device_project == "19632") {
+        set_device_info("RMX1927", "realme 5", "19632");
+    } else {
+        if (device_operator == "31") {
+            set_device_info("RMX2030", "realme 5i", "19743");
+        } else if (device_operator == "32") {
+            set_device_info("RMX2030", "realme 5i", "19744");
+        } else if (device_operator == "33") {
+            set_device_info("RMX2031", "realme 5i", "19675");
+        } else if (device_operator == "34") {
+            set_device_info("RMX2032", "realme 5i", "19676");
         }
     }
 
     device = GetProperty("ro.product.device", "");
-    LOG(ERROR) << "Found device hwversion '" << device_hwversion.c_str() << "' setting build properties for '" << device.c_str() << "' device\n";
+    LOG(ERROR) << "Found device project '" << device_project.c_str() << "' operator '" << device_operator.c_str() << "` setting build properties for '" << device.c_str() << "' device\n";
 }
 
 void vendor_load_properties()
