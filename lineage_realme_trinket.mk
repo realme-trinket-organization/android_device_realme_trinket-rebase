@@ -36,8 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-realme
 
 TARGET_VENDOR_PRODUCT_NAME := realme_trinket
 
-# TODO: Correct build fp and desc on libinit
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys "
+	PRIVATE_BUILD_DESC="unknown-user 10 QKQ1.200209.002 unknown release-keys"
 
-BUILD_FINGERPRINT := xiaomi/ginkgo/ginkgo:10/QKQ1.200114.002/20.7.9:user/release-keys
+BUILD_FINGERPRINT := realme/RMX1911/RMX1911:10/QKQ1.200209.002/1642670490:user/release-keys
