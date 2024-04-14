@@ -148,6 +148,7 @@ void vendor_load_device_properties()
         }
     } else if (device_project == "19632") {
         set_device_info("RMX1927", "realme 5", "19632");
+        property_override_device("ro.boot.product.hardware.sku", "nfc");
     } else {
         if (device_operator == "31") {
             set_device_info("RMX2030", "realme 5i", "19743");

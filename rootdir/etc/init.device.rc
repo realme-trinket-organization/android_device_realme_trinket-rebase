@@ -77,15 +77,6 @@ on fs
     mkdir /mnt/vendor/persist/bms 0700 root system
     #endif /*VENDOR_EDIT*/
 
-on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=18.31.0
-    setprop ro.boot.product.hardware.sku nfc
-
-on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=18.39.0
-    setprop ro.boot.product.hardware.sku nfc
-
-on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=19.39.0
-    setprop ro.boot.product.hardware.sku nfc
-
 on post-fs-data
     #ifdef VENDOR_EDIT
     #caihuiyue@MM.Display.feature, 2020/01/03 Add for display
