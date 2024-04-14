@@ -281,7 +281,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/sn100x
+    vendor/nxp/opensource/pn5xx
 
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
