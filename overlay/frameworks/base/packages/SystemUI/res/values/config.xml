@@ -32,4 +32,10 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <resources>
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_end">14.0dip</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_start">14.0dip</dimen>
 </resources>
