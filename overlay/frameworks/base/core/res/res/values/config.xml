@@ -459,15 +459,13 @@
           @see https://www.w3.org/TR/SVG/paths.html#PathData
      -->
      <string translatable="false" name="config_mainBuiltInDisplayCutout">
-          M -80,0 L -80,80 L 80,80 L 80,0 Z
+          M -50,0 L -50,45 L 50,45 L 50,0 Z
      </string>
   
      <!-- Height of the status bar -->
-     <dimen name="status_bar_height_portrait">80px</dimen>
+     <dimen name="status_bar_height_portrait">45px</dimen>
      <dimen name="status_bar_height_landscape">24dp</dimen>
-     <dimen name="rounded_corner_radius_top">106.0px</dimen>
-     <dimen name="rounded_corner_radius_bottom">108.0px</dimen>
-  
+
      <!-- List supported color modes. -->
      <integer-array name="config_availableColorModes">
           <item>0</item> <!-- COLOR_MODE_NATURAL -->
