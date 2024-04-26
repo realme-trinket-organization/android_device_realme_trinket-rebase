@@ -24,7 +24,6 @@
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
-#include <unistd.h>
 
 namespace {
 
@@ -35,8 +34,6 @@ namespace {
 
 #define BACKLIGHTS(x) PPCAT(/sys/class/backlight, x)
 #define LCD_ATTR(x) STRINGIFY(PPCAT(BACKLIGHTS(panel0-backlight), x))
-#define LEDS(x) PPCAT(/sys/class/leds, x)
-#define WHITE_ATTR(x) STRINGIFY(PPCAT(LEDS(red), x))
 
 using ::android::base::ReadFileToString;
 using ::android::base::WriteStringToFile;
@@ -73,10 +70,6 @@ inline uint32_t RgbaToBrightness(uint32_t color, uint32_t max_brightness) {
     return RgbaToBrightness(color) * max_brightness / 0xFF;
 }
 
-inline bool IsLit(uint32_t color) {
-    return color & 0x00ffffff;
-}
-
 }  // anonymous namespace
 
 namespace android {
@@ -94,13 +87,6 @@ Light::Light() {
         max_screen_brightness_ = kDefaultMaxScreenBrightness;
         LOG(ERROR) << "Failed to read max screen brightness, fallback to "
                    << kDefaultMaxLedBrightness;
-    }
-
-    if (ReadFileToString(WHITE_ATTR(max_brightness), &buf)) {
-        max_led_brightness_ = std::stoi(buf);
-    } else {
-        max_led_brightness_ = kDefaultMaxLedBrightness;
-        LOG(ERROR) << "Failed to read max LED brightness, fallback to " << kDefaultMaxLedBrightness;
     }
 }
 
@@ -129,41 +115,6 @@ Return<void> Light::getSupportedTypes(getSupportedTypes_cb _hidl_cb) {
 void Light::setLightBacklight(Type /*type*/, const LightState& state) {
     uint32_t brightness = RgbaToBrightness(state.color, max_screen_brightness_);
     WriteToFile(LCD_ATTR(brightness), brightness);
-}
-
-void Light::setLightNotification(Type type, const LightState& state) {
-    bool found = false;
-    for (auto&& [cur_type, cur_state] : notif_states_) {
-        if (cur_type == type) {
-            cur_state = state;
-        }
-
-        // Fallback to battery light
-        if (!found && (cur_type == Type::BATTERY || IsLit(cur_state.color))) {
-            found = true;
-            LOG(DEBUG) << __func__ << ": type=" << toString(cur_type);
-            applyNotificationState(cur_state);
-        }
-    }
-}
-
-void Light::applyNotificationState(const LightState& state) {
-    uint32_t white_brightness = RgbaToBrightness(state.color, max_led_brightness_);
-
-    // Turn off the leds (initially)
-    WriteToFile(WHITE_ATTR(breath), 0);
-
-    if (state.flashMode == Flash::TIMED && state.flashOnMs > 0 && state.flashOffMs > 0) {
-        LOG(DEBUG) << __func__ << ": color=" << std::hex << state.color << std::dec
-                   << " onMs=" << state.flashOnMs << " offMs=" << state.flashOffMs;
-
-        // White
-        WriteToFile(WHITE_ATTR(delay_off), static_cast<uint32_t>(state.flashOffMs));
-        WriteToFile(WHITE_ATTR(delay_on), static_cast<uint32_t>(state.flashOnMs));
-        WriteToFile(WHITE_ATTR(breath), 1);
-    } else {
-        WriteToFile(WHITE_ATTR(brightness), white_brightness);
-    }
 }
 
 }  // namespace implementation
