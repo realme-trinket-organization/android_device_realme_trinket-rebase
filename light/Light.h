@@ -41,26 +41,11 @@ class Light : public ILight {
 
   private:
     void setLightBacklight(Type type, const LightState& state);
-    void setLightButtons(Type type, const LightState& state);
-    void setLightNotification(Type type, const LightState& state);
-    void applyNotificationState(const LightState& state);
 
-    uint32_t max_button_brightness_;
-    uint32_t max_led_brightness_;
     uint32_t max_screen_brightness_;
 
     std::unordered_map<Type, std::function<void(Type type, const LightState&)>> lights_{
-            {Type::BACKLIGHT, [this](auto&&... args) { setLightBacklight(args...); }},
-            {Type::BATTERY, [this](auto&&... args) { setLightNotification(args...); }},
-            {Type::NOTIFICATIONS, [this](auto&&... args) { setLightNotification(args...); }}};
-
-    // Keep sorted in the order of importance.
-    std::array<std::pair<Type, LightState>, 2> notif_states_ = {{
-            {Type::NOTIFICATIONS, {}},
-            {Type::BATTERY, {}},
-    }};
-
-    std::vector<std::string> buttons_;
+            {Type::BACKLIGHT, [this](auto&&... args) { setLightBacklight(args...); }}};
 };
 
 }  // namespace implementation
