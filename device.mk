@@ -423,6 +423,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/pn5xx \
     vendor/qcom/opensource/usb/etc
 
+# Soundtrigger
+PRODUCT_PACKAGES += \
+    sound_trigger.primary.trinket
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \

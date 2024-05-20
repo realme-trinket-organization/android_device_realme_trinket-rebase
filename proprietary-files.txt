@@ -2945,7 +2945,6 @@ vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
 vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
