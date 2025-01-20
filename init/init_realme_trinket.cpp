@@ -44,15 +44,6 @@
 #include "property_service.h"
 
 using android::base::GetProperty;
-using android::init::property_set;
-
-char const *heapstartsize;
-char const *heapgrowthlimit;
-char const *heapsize;
-char const *heapminfree;
-char const *heapmaxfree;
-char const *heaptargetutilization;
-
 
 std::vector<std::string> ro_props_default_source_order = {
     "",
@@ -61,30 +52,6 @@ std::vector<std::string> ro_props_default_source_order = {
     "system.",
     "vendor.",
 };
-
-void check_device()
-{
-    struct sysinfo sys;
-
-    sysinfo(&sys);
-
-    if (sys.totalram > 3072ull * 1024 * 1024) {
-        // from - phone-xxhdpi-4096-dalvik-heap.mk
-        heapstartsize = "8m";
-        heapgrowthlimit = "256m";
-        heapsize = "512m";
-        heaptargetutilization = "0.6";
-        heapminfree = "8m";
-        heapmaxfree = "16m";
-    } else {
-        heapstartsize = "8m";
-        heapgrowthlimit = "256m";
-        heapsize = "512m";
-        heaptargetutilization = "0.75";
-        heapminfree = "2m";
-        heapmaxfree = "8m";
-    }
-}
 
 void property_override_device(char const prop[], char const value[], bool add = true)
 {
@@ -122,7 +89,44 @@ void set_device_info(const std::string device, const std::string model, const st
     property_override_device("ro.separate.soft", board_id.c_str());
 }
 
-void vendor_load_device_properties()
+void vendor_set_dalvik()
+{
+    char const *heapstartsize;
+    char const *heapgrowthlimit;
+    char const *heapsize;
+    char const *heapminfree;
+    char const *heapmaxfree;
+    char const *heaptargetutilization;
+
+    struct sysinfo sys;
+    sysinfo(&sys);
+
+    if (sys.totalram > 3072ull * 1024 * 1024) {
+        // from - phone-xxhdpi-4096-dalvik-heap.mk
+        heapstartsize = "8m";
+        heapgrowthlimit = "256m";
+        heapsize = "512m";
+        heaptargetutilization = "0.6";
+        heapminfree = "8m";
+        heapmaxfree = "16m";
+    } else {
+        heapstartsize = "8m";
+        heapgrowthlimit = "256m";
+        heapsize = "512m";
+        heaptargetutilization = "0.75";
+        heapminfree = "2m";
+        heapmaxfree = "8m";
+    }
+
+    property_override_device("dalvik.vm.heapstartsize", heapstartsize);
+    property_override_device("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
+    property_override_device("dalvik.vm.heapsize", heapsize);
+    property_override_device("dalvik.vm.heaptargetutilization", heaptargetutilization);
+    property_override_device("dalvik.vm.heapminfree", heapminfree);
+    property_override_device("dalvik.vm.heapmaxfree", heapmaxfree);
+}
+
+void vendor_set_device_info()
 {
     std::ifstream prjPath("/proc/oppoVersion/prjVersion");
     std::ifstream opPath("/proc/oppoVersion/operatorName");
@@ -182,15 +186,7 @@ void vendor_set_fingerprint_device()
 
 void vendor_load_properties()
 {
-    check_device();
-
-    property_set("dalvik.vm.heapstartsize", heapstartsize);
-    property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
-    property_set("dalvik.vm.heapsize", heapsize);
-    property_set("dalvik.vm.heaptargetutilization", heaptargetutilization);
-    property_set("dalvik.vm.heapminfree", heapminfree);
-    property_set("dalvik.vm.heapmaxfree", heapmaxfree);
-
-    vendor_load_device_properties();
+    vendor_set_dalvik();
+    vendor_set_device_info();
     vendor_set_fingerprint_device();
 }
