@@ -27,6 +27,55 @@
 #
 #
 
+on boot
+    #ifdef VENDOR_EDIT
+    #LiYue@BSP.CHG.Basic, 2019/8/22, remove some not used feature from hvdcp_opti
+    setprop persist.vendor.hvdcp_opti.disallowed 1
+    setprop persist.vendor.pps.disallowed 1
+    setprop persist.vendor.cp.disallowed 1
+    setprop persist.vendor.std_pd.disallowed 1
+    setprop persist.vendor.tb.disallowed 1
+    setprop persist.vendor.ctm.disallowed 1
+    #endif
+
+on charger
+    #ifdef VENDOR_EDIT
+    #shanliangliang@BSP.CHG.Basic, 2020/03/09, start hvdcp_opti when in poweroff mode
+    start vendor.hvdcp_opti
+    #shanliangliang@BSP.CHG.Basic, 2020/03/09, add for fixing poweroff alarm issue
+    start vendor.power_off_alarm
+    #endif
+
+on early-boot
+    #ifdef VENDOR_EDIT
+    #liwei.a@PSW.MM.Display.LCD.Stability, 2019/06/13, add for display node permission
+    chown system system /sys/kernel/oppo_display/shutdownflag
+    chmod 0666 /sys/kernel/oppo_display/shutdownflag
+    #endif /*VENDOR_EDIT*/
+
+    #ifdef VENDOR_EDIT
+    #Kui.Feng@BSP.Touch, 2019/12/31, add for touch node permission
+    chown system system /proc/touchpanel/oppo_tp_limit_enable
+    chmod 0666 /proc/touchpanel/oppo_tp_limit_enable
+    chown system system /proc/touchpanel/oppo_tp_direction
+    chmod 0666 /proc/touchpanel/oppo_tp_direction
+    chown system system /proc/touchpanel/game_switch_enable
+    chmod 0666 /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0666 /proc/touchpanel/double_tap_enable
+    #endif /*VENDOR_EDIT*/
+
+on fs
+    #ifdef VENDOR_EDIT
+    #Xuefeng.Peng@PSW.AD.Storage.ReservePartition.1207580, 2018/11/09, Add for change opporeserve mount point for google GSI test
+    mkdir /mnt/vendor/opporeserve 0771 system system
+    #endif /*VENDOR_EDIT*/
+
+    #ifdef VENDOR_EDIT
+    #Qiao.Hu@BSP.CHG.basic, 2019/04/03, Add for save capacity
+    mkdir /mnt/vendor/persist/bms 0700 root system
+    #endif /*VENDOR_EDIT*/
+
 on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=18.31.0
     setprop ro.boot.product.hardware.sku nfc
 
@@ -35,3 +84,117 @@ on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=18.39.0
 
 on init && property:ro.boot.hwc=Global_B && property:ro.boot.hwversion=19.39.0
     setprop ro.boot.product.hardware.sku nfc
+
+on post-fs-data
+    #ifdef VENDOR_EDIT
+    #caihuiyue@MM.Display.feature, 2020/01/03 Add for display
+    chown system system /sys/kernel/oppo_display/dump_info
+    chown system system /sys/kernel/oppo_display/hbm
+    chown system system /sys/kernel/oppo_display/seed
+    chown system system /sys/kernel/oppo_display/dimlayer_bl_en
+    chown system system /sys/kernel/oppo_display/ffl_set
+    chown system system /sys/kernel/oppo_display/dimlayer_hbm
+    chown system system /sys/kernel/oppo_display/force_screenfp
+    chown system system /sys/kernel/oppo_display/notify_fppress
+    chown system system /sys/kernel/oppo_display/aod_light_mode_set
+    chown system system /sys/kernel/oppo_display/cabc
+    chown system system /sys/kernel/oppo_display/video
+    chown system system /sys/kernel/oppo_display/aod_area
+    chown system system /sys/kernel/oppo_display/failsafe
+
+    chmod 0666 /sys/kernel/oppo_display/dump_info
+    chmod 0666 /sys/kernel/oppo_display/hbm
+    chmod 0666 /sys/kernel/oppo_display/seed
+    chmod 0666 /sys/kernel/oppo_display/dimlayer_bl_en
+    chmod 0666 /sys/kernel/oppo_display/ffl_set
+    chmod 0666 /sys/kernel/oppo_display/dimlayer_hbm
+    chmod 0666 /sys/kernel/oppo_display/force_screenfp
+    chmod 0666 /sys/kernel/oppo_display/notify_fppress
+    chmod 0666 /sys/kernel/oppo_display/aod_light_mode_set
+    chmod 0666 /sys/kernel/oppo_display/video
+    chmod 0666 /sys/kernel/oppo_display/aod_area
+    chmod 0666 /sys/kernel/oppo_display/failsafe
+
+    chown system system /sys/kernel/oppo_display/power_status
+    chown system system /sys/kernel/oppo_display/sau_closebl_node
+    chown system system /sys/kernel/oppo_display/esd_status
+    chown system system /sys/kernel/oppo_display/spr
+
+    chmod 0666 /sys/kernel/oppo_display/power_status
+    chmod 0666 /sys/kernel/oppo_display/sau_closebl_node
+    chmod 0666 /sys/kernel/oppo_display/esd_status
+    chmod 0666 /sys/kernel/oppo_display/cabc
+
+    chmod 0644 /data/oppo/multimedia/oppo_display_perf_list.xml
+    chmod 0664 /sys/kernel/oppo_display/spr
+
+    mkdir /mnt/vendor/persist/media 0775 media media
+    #endif /* VENDOR_EDIT */
+
+    chmod 0666 /mnt/vendor/persist/WCNSS_qcom_cfg.ini
+
+on property:sys.boot_completed=1
+    start oppoalgo_daemon
+
+    #ifdef ODM_WT_EDIT
+    #Hao.liu@ODM_WT.BSP.Fingerprint.Secure, 2020/04/06,添加fpc指紋驱动节点的权限
+	chown system system  /sys/devices/platform/soc/soc:fpc1020/irq
+	chown system system  /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
+	chown system system  /sys/devices/platform/soc/soc:fpc1020/compatible_all
+	chown system system  /sys/devices/platform/soc/soc:fpc1020/hw_reset
+
+	chmod 0660 /sys/devices/platform/soc/soc:fpc1020/irq
+	chmod 0660 /sys/devices/platform/soc/soc:fpc1020/irq_enable
+	chmod 0660 /dev/uinput
+	chmod 0660 /sys/devices/platform/soc/soc:fpc1020/wakeup_enable
+	chmod 0660 /sys/devices/platform/soc/soc:fpc1020/compatible_all
+	chmod 0660 /sys/devices/platform/soc/soc:fpc1020/hw_reset
+    #endif ODM_WT_EDIT
+
+service diag_mdlog_start /vendor/bin/diag_mdlog -c -u
+    override
+    class late_start
+    user shell
+    group system diag oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service diag_mdlog_stop /vendor/bin/diag_mdlog -k
+    override
+    class late_start
+    user shell
+    group system diag oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service diag_mdlog_nrt /vendor/bin/diag_mdlog -c -b -u
+    class late_start
+    user shell
+    group system diag oem_2901 sdcard_rw sdcard_r media_rw
+    disabled
+    oneshot
+
+service oppoalgo_daemon /vendor/bin/oppoalgo_daemon
+    class late_start
+    user camera
+    group camera system
+
+service seemp_healthd /vendor/bin/seemp_healthd
+    override
+    class late_start
+    user system
+    group system
+    disabled
+
+service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
+    override
+    class main
+    user system
+    group system wifi inet sdcard_rw media_rw diag
+    oneshot
+    disabled
+
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    class core
+    user root
+    group system wakelock
