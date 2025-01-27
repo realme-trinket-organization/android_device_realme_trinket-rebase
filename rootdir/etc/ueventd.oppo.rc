@@ -1,0 +1,12 @@
+#ifdef VENDOR_EDIT
+#Qingwen.Liu@RM.BSP.Fingerprint.Basic. 2019/09/29, add for egis device
+/dev/esfp0                0660   system     system
+/sys/bus/platform/devices/egis_input navigation_enable 0660  system  system
+/sys/bus/platform/devices/egis_input navigation_event  0660  system  system
+#endif VENDOR_EDIT
+
+#ifdef VENDOR_EDIT
+#zhangfeng/W9005747@Connectivity.CN.NFC.BASIC.Hardware.2681315, 2020/03/02,
+/dev/cxd224x-i2c          0660    nfc         nfc
+/dev/cxd22xx-i2c          0660    nfc         nfc
+#end VENDOR_EDIT
