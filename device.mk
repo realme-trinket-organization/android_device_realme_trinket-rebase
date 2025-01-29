@@ -157,6 +157,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.oppo
+
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
@@ -433,6 +437,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.1.vendor
 
 # Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/oppo
+
 QCOM_SOONG_NAMESPACE := $(DEVICE_PATH)
 
 # Tetheroffload
