@@ -188,6 +188,11 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno610
 BOARD_POWER_CUSTOM_BOARD_LIB := libpower_6125
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
