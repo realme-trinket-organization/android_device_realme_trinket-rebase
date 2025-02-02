@@ -43,8 +43,6 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-using android::base::GetProperty;
-
 std::vector<std::string> ro_props_default_source_order = {
     "",
     "odm.",
@@ -132,7 +130,6 @@ void vendor_set_device_info()
     std::ifstream opPath("/proc/oppoVersion/operatorName");
     std::string device_project;
     std::string device_operator;
-    std::string device;
 
     getline(prjPath, device_project);
     getline(opPath, device_operator);
@@ -164,9 +161,6 @@ void vendor_set_device_info()
             set_device_info("RMX2032", "realme 5i", "19676");
         }
     }
-
-    device = GetProperty("ro.product.device", "");
-    LOG(ERROR) << "Found device project '" << device_project.c_str() << "' operator '" << device_operator.c_str() << "` setting build properties for '" << device.c_str() << "' device\n";
 }
 
 void vendor_load_properties()
