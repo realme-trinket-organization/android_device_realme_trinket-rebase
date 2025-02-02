@@ -23,9 +23,6 @@
 
 DEVICE_PATH := device/realme/realme_trinket
 
-# Inherit properties
-$(call inherit-product, $(DEVICE_PATH)/properties.mk)
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \

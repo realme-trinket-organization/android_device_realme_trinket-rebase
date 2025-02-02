@@ -189,6 +189,11 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/misc/config.fs
 BOARD_POWER_CUSTOM_BOARD_LIB := libpower_6125
 TARGET_USES_INTERACTION_BOOST := true
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/configs/properties/odm.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
+
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
