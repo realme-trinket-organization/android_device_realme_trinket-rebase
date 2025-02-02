@@ -185,6 +185,7 @@ VENDOR_SECURITY_PATCH := 2022-09-05
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include hardware/oppo/sepolicy/SEPolicy.mk
 
 # Treble
 BOARD_VNDK_VERSION := current
