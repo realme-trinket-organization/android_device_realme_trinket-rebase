@@ -60,28 +60,6 @@ if [ -z "$SRC" ]; then
     SRC=adb
 fi
 
-function blob_fixup() {
-    case "${1}" in
-
-    # Remove vtcamera for ginkgo
-    vendor/etc/camera/camera_config.xml)
-        gawk -i inplace '{ p = 1 } /<CameraModuleConfig>/{ t = $0; while (getline > 0) { t = t ORS $0; if (/ginkgo_vtcamera/) p = 0; if (/<\/CameraModuleConfig>/) break } $0 = t } p' "${2}"
-        ;;
-
-    vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml)
-        sed -i "s/ginkgo_s5kgm1_sunny_i/ginkgo_s5kgm1_ofilm_ii/g" "${2}"
-        ;;
-    
-    vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml)
-        sed -i "s/ginkgo_s5kgm1_ofilm_ii_common/ginkgo_s5kgm1_sunny_i_common/g" "${2}"
-        ;;
-
-    vendor/etc/camera/ginkgo_s5kgm1_sunny_i_chromatix.xml)
-        sed -i "s/ginkgo_s5kgm1_ofilm_ii_postproc/ginkgo_s5kgm1_sunny_i_postproc/g" "${2}"
-        ;;
-    esac
-}
-
 # Initialize the helper
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false $CLEAN_VENDOR
 
