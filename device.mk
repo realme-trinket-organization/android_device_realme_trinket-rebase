@@ -283,9 +283,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.2.vendor
 
 # NFC
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/nxp/opensource/pn5xx
-
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     com.gsma.services.nfc \
@@ -456,7 +453,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
-    hardware/oppo
+    hardware/oppo \
+    vendor/nxp/opensource/pn5xx
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
