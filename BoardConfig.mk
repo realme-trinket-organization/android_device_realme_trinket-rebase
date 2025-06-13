@@ -22,8 +22,6 @@
 # definition file).
 #
 
-BUILD_BROKEN_DUP_RULES := true
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925,RMX1927,RMX2030
 
