@@ -161,7 +161,6 @@ vendor/lib/libVDPostureDetection.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libblur_channel.so
 vendor/lib/libc++_shared.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_core_hwi.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -205,7 +204,6 @@ vendor/lib/libsymphonypower.so
 vendor/lib/libthread_blur.so
 vendor/lib/libvideoutils.so
 vendor/lib64/libVDBlurlessAPI_v2.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libmegface.so
@@ -2499,10 +2497,6 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Camera OIS
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
-
-# Camera provider
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
-vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 
 # Camera sensors
 vendor/lib/imx386_PdafLibrary.so
