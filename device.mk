@@ -229,6 +229,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.qti.dcvs.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.oppo.rc \
