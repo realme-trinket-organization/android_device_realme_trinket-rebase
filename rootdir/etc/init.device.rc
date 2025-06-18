@@ -142,6 +142,9 @@ on post-fs-data
 
     chmod 0666 /mnt/vendor/persist/WCNSS_qcom_cfg.ini
 
+on property:ro.boot.product.hardware.sku=nfc
+    enable nqnfc_2_0_hal_service
+
 on property:sys.boot_completed=1
     start oppoalgo_daemon
 
@@ -197,4 +200,10 @@ service vendor.fps_hal.egis /vendor/bin/hw/android.hardware.biometrics.fingerpri
     user system
     group system input uhid
     writepid /dev/cpuset/system-background/tasks
+    disabled
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class hal
+    user nfc
+    group nfc
     disabled
