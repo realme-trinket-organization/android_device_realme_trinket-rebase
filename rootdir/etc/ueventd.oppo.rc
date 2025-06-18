@@ -1,3 +1,5 @@
+firmware_directories /vendor/firmware_mnt/image/ /vendor/firmware/
+
 #ifdef VENDOR_EDIT
 #Qingwen.Liu@RM.BSP.Fingerprint.Basic. 2019/09/29, add for egis device
 /dev/esfp0                0660   system     system
