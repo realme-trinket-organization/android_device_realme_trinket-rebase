@@ -230,8 +230,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.oppo.rc \
@@ -465,7 +463,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/oppo \
-    vendor/nxp/opensource/pn5xx
+    vendor/nxp/opensource/pn5xx \
+    vendor/qcom/opensource/usb/etc
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
@@ -485,6 +484,10 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
+
+PRODUCT_PACKAGES += \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
 
 # Vibrator
 PRODUCT_PACKAGES += \
