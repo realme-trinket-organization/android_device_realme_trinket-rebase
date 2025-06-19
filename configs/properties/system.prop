@@ -19,19 +19,10 @@ tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
 # Bluetooth
-bt.max.hfpclient.connections=1
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
-persist.bluetooth.bqr.choppy_threshold=9,6
-persist.bluetooth.bqr.event_mask=0x8000000E
-persist.bluetooth.bqr.min_interval_ms=60000
-persist.bluetooth.disableabsvol=false
-persist.bluetooth.disableinbandringing=false
-persist.bluetooth.specificatcmdsenable=true
 ro.bluetooth.a2dp_offload.supported=true
-ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.library_name=libbluetooth_qti.so
-ro.bluetooth.wipower=false
 
 # Camera
 ro.build.flavor=trinket-user
