@@ -2779,42 +2779,60 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|4d4ad0388d44d4a2387d72a52b970cc6ea851acf
 
-# GPS
-vendor/bin/garden_app
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/mlid
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
--vendor/etc/vintf/manifest/vendor.qti.gnss@3.0-service.xml
-vendor/etc/cacert_location.pem
-vendor/etc/xtra_root_cert.pem
-vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
-vendor/lib64/libaoa.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libgarden.so
-vendor/lib64/libgarden_haltests_e2e.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgnsspps.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_socket.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0-service.so
-vendor/lib64/vendor.qti.gnss@3.0.so
+# GNSS - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/android.hardware.gnss@2.1-service-qti|bd3d5174f69cf65047c8d8b159554515b0f3d022
+vendor/bin/loc_launcher|bf13787d95c2fec6fadb2552fa63b12ab606575c
+vendor/bin/lowi-server|560c56d6168951cf71ca8cef40cf67e61255378b
+vendor/bin/mlid|07b119fd1e72649f0cefebe40d2aa8a7d85b115f
+vendor/bin/xtra-daemon|5ef4c898cd014686bb9f487dde2468deccfaef1c
+vendor/bin/xtwifi-client|0d67893b2fadea9513770d6964887d435611a880
+vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
+vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
+-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
+-vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
+vendor/etc/cacert_location.pem|0789bf799c7e45d352a83e2f79ddb0cea86db85b
+vendor/etc/xtra_root_cert.pem|f55a31ec4d9cf8ce2724acadecf00c779f8767db
+vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|6a84a99f65e81434eefb666deffe175ca113c8be
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|2ae36b48e1a17206a7519639ddc7d6c61a9b99ef
+vendor/lib64/libaoa.so|9e50b9ab0c2306471f6f748f364c16af12f79193
+vendor/lib64/libbatching.so|a4a69332b55553d61cbc37c227ca63cb14d23972
+vendor/lib64/libdataitems.so|c02f29014264a7b915e80c526323da3021c886ba
+vendor/lib64/libgdtap.so|510075724d368816c89a5f9e76b2529484e03d36
+vendor/lib64/libgeofencing.so|a6fffe98ddc82de53cf353c4f3fca602702a8330
+vendor/lib64/libgnss.so|e886f6ed62aa8ac4d0b84a54f999d502672dbc87
+vendor/lib64/libgnsspps.so|f8b2e3f70d4e51982b061dcd6d26a6ead45b4900
+vendor/lib64/libgps.utils.so|c959c3c13bfcb3e7a65ef478a6e7ffacb7699a5e
+vendor/lib64/libizat_client_api.so|50a88d24ced663000902575aa28f5dbb8b3d942b
+vendor/lib64/libizat_core.so|8b4d28c8ba320d64a1b67c8ff99adbff14a6c698
+vendor/lib64/liblbs_core.so|d93816d01c0ede10383ff162c4b1147e46191d26
+vendor/lib64/libloc_api_v02.so|e371f41df1d70d33dbee3299ec9125a0cf572f97
+vendor/lib64/libloc_core.so|a0ea54a467d373e837b38f1c85f8043f93a367f9
+vendor/lib64/libloc_socket.so|8cc30a80b775a613378f388c208b757bf4267c6a
+vendor/lib64/liblocation_api.so|f36fca75dbc5aa7b38ec3b5517fc48421b8bbdf7
+vendor/lib64/liblocationservice.so|69837c96b80818ac858948690072e0521d4149c0
+vendor/lib64/liblocationservice_glue.so|decd68971dcb401d164ea992327460fadb044cd8
+vendor/lib64/liblowi_client.so|f5543637d28aafde8b257065fc0eff55896625f9
+vendor/lib64/liblowi_wifihal.so|44c32104895b8f47dd772ebf60c19fc7a704b5f3
+vendor/lib64/libqcc_file_agent.so|ddfc0babc52ab12b6b159b36505bc0b5ef460a0a
+vendor/lib64/libslimclient.so|26bf54beff0e4dc6336c48d46cafb3bd10dd6543
+vendor/lib64/libxtadapter.so|453f9095f8979213c5bec9de73b1b7c6d085e265
+vendor/lib64/vendor.qti.gnss@1.0.so|7d6828171016def19f56c6986b2ce1d08fe3ec57
+vendor/lib64/vendor.qti.gnss@1.1.so|786e0626473bdee3e55c9f5f34ee0f1c21a08f5d
+vendor/lib64/vendor.qti.gnss@1.2.so|e0b46a905d1aa17b6667bcbec42bce60a03129c1
+vendor/lib64/vendor.qti.gnss@2.0.so|60f8a7f1cfd27da6394373e9b34e733b3701ad04
+vendor/lib64/vendor.qti.gnss@2.1.so|391a0e7bdd477ba519aaddc1b0711840e3362dc8
+vendor/lib64/vendor.qti.gnss@3.0.so|b67a1ff507cfb4165a9dc970dc54aa26cc731e6f
+vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d079968
+vendor/lib64/vendor.qti.gnss@4.0.so|7d343c73e6720434045cc38ea0e570ae9d03cd51
+
+# GNSS configs - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/etc/apdr.conf|c00b36e681f26ff9cb778b86fd98759a619d2365
+vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
+vendor/etc/gps.conf|edeaf10355db6167e904b1b5c427f00b6f0a0bf2
+vendor/etc/izat.conf|661b962a30295bc429ba4e97147a447fdb522876
+vendor/etc/lowi.conf|b8774138f3b856883528608e19275d050ab7d263
+vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
 # Graphics - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
 vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
@@ -3446,7 +3464,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
-
 
 # Thermal - from laurel_sprout-user 10 QKQ1.190910.002 V11.0.23.0.QFQMIXM release-keys
 vendor/bin/thermal-engine|532fd0c51f6e50ad3f83fdef69f3d0366e2df7b6
