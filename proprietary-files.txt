@@ -2580,6 +2580,15 @@ vendor/lib/libmmcamera_truly_cma481_eeprom.so
 vendor/lib/libmmcamera_truly_cmb433_eeprom.so
 vendor/lib/libmmcamera_xinli_s5kgm1_eeprom.so
 
+# Certificate Authority - from laurel_sprout V12.0.26.0.RFQMIXM
+-vendor/app/CACertService/CACertService.apk|0530d69b3abbfe64c1c75a6c914a44600e9d102b
+vendor/lib/libcacertclient.so|1d9c1fc6b730810fbb800d8cc20aa2b352233998
+vendor/lib/libjnihelper.so|ef2c1ecf3a0e02125d78af8a16aea074d4337034
+vendor/lib/vendor.qti.hardware.cacert@1.0.so|1b9f8729736153987cc36f74015e00d3c614a721
+vendor/lib64/libcacertclient.so|90281ef665d6a66ad7aa0806d97c20866fe1a83d
+vendor/lib64/libjnihelper.so|fb8690fbb5b8fbb97ded1bd8d4f87285ec74cf41
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d6c51a8a
+
 # CDSP
 vendor/bin/cdsprpcd
 vendor/lib/libcdsp_default_listener.so
@@ -2689,7 +2698,7 @@ product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a70cfc1be3e06cde6318d6969e114429fe
 product/lib64/libdiag_system.so|3b75273eb06e50d9b886b59022f310dcf85c870a
 product/lib64/libdpmctmgr.so|30edca46d4d0f6ecdb86169bf9839375a77c6d27
 product/lib64/libdpmfdmgr.so|8c852ffa26dac26fd87eab57f4c2f46fff5163fa
-product/lib64/libdpmframework.so|6910afd51f65420e454a1eb555df6f1de9b6f370
+product/lib64/libdpmframework.so|cba7fd9244135d009247bb96b29286949398a7ed
 product/lib64/libdpmtcm.so|cd964bbad1930a8ccd5a878b5a2d8f414a6a75a8
 -product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
 vendor/bin/dpmQmiMgr|d85c2e845154bc7c61ad511ab2c11e43ec0e6b54
@@ -2828,7 +2837,6 @@ vendor/etc/cacert_location.pem
 vendor/etc/xtra_root_cert.pem
 vendor/lib/hw/vendor.qti.gnss@3.0-impl.so
 vendor/lib/libaoa.so
-vendor/lib/libcacertclient.so
 vendor/lib/libdataitems.so
 vendor/lib/libgarden.so
 vendor/lib/libgdtap.so
@@ -2851,10 +2859,8 @@ vendor/lib/vendor.qti.gnss@2.0.so
 vendor/lib/vendor.qti.gnss@2.1.so
 vendor/lib/vendor.qti.gnss@3.0-service.so
 vendor/lib/vendor.qti.gnss@3.0.so
-vendor/lib/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/hw/vendor.qti.gnss@3.0-impl.so
 vendor/lib64/libaoa.so
-vendor/lib64/libcacertclient.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libgarden.so
 vendor/lib64/libgarden_haltests_e2e.so
@@ -2879,7 +2885,6 @@ vendor/lib64/vendor.qti.gnss@2.0.so
 vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0-service.so
 vendor/lib64/vendor.qti.gnss@3.0.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 
 # Graphics - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
 vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
