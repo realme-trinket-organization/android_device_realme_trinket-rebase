@@ -2716,6 +2716,13 @@ vendor/lib64/libbase64.so|caba4e42499d8e53e80c5e05313a36058ae5123e
 vendor/lib64/librmp.so|176aed768090f0c8b48cb6ad9e397b35f128b2a5
 vendor/lib64/libwvhidl.so|1abe83f22e9a32822c21c4963137f0df65c9bd3e
 
+# DSP - from RMX2050 RKQ1.200903.002
+vendor/bin/dspservice|00dcd6e79d32426b15ed2148bf3c05082c400c9e
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|b5075bcf4e885b01b25e7ecb3fdcf022977353ba
+vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
