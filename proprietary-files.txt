@@ -2752,17 +2752,19 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml|bedb01aed43b95943ac60f80c
 vendor/lib64/vendor.qti.hardware.factory@1.0.so|1840f0b0a54c666598eceb9fa1217373b850cc07
 vendor/lib64/vendor.qti.hardware.factory@1.1.so|433fa6e6c62b3c1b46d1e88e6a0eebe37b30f3e5
 
-# FM
-lib/fm_helium.so
-lib/libfm-hci.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
-product/lib/vendor.qti.hardware.fm@1.0.so
-product/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# FM - from laurel_sprout V12.0.26.0.RFQMIXM
+system_ext/lib/fm_helium.so|0a810beae107546e3c5dba6ff7309c781f079f60
+system_ext/lib/libfm-hci.so|c08c4df1a388ac7bf11a230230cd8e501a0239b9
+system_ext/lib/vendor.qti.hardware.fm@1.0.so|29d1ca940527d8016884517a1a3234bd24005be4
+system_ext/lib64/fm_helium.so|68702cf4304128663a1578150a1ed8063d93ca73
+system_ext/lib64/libfm-hci.so|0da384e2fd4809bb39a36fb25d3c6c0325cea0c3
+system_ext/lib64/vendor.qti.hardware.fm@1.0.so|b7dd1354a1415cf49b96b6bb0cc44920c41d2aab
+vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
+vendor/etc/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|da2f624339da6eedc514716431af9a0c9cd76145
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|e8a122a7644c4c258eda87385c89b0d6c596637f
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
 
 # Fingerprint
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
