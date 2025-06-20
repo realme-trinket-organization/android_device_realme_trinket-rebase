@@ -2834,43 +2834,41 @@ vendor/etc/lowi.conf|b8774138f3b856883528608e19275d050ab7d263
 vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
 vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
-# Graphics - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/egl/eglSubDriverAndroid.so|7bd57ae573b7db35f1e7a8a9b41b26e9980f8093
-vendor/lib/egl/libEGL_adreno.so|b74f548f7762817b9f1c4ff7f9ee0ab5abe21ccf
-vendor/lib/egl/libGLESv1_CM_adreno.so|9b598c109e6fd9a1ae7fcb463b5b075ca638b812
-vendor/lib/egl/libGLESv2_adreno.so|2aa5c8e3131d6f321f7c64791efedea120d0ae69
-vendor/lib/egl/libQTapGLES.so|934ef4b849204b557efd0fb38d2cc5bd85d88f93
-vendor/lib/egl/libq3dtools_adreno.so|5d25d3f8d5f5e86f6d1b83df3a15561ff257756d
-vendor/lib/egl/libq3dtools_esx.so|a2f68d0254bf028416a067e341f48c8e5cb624ef
-vendor/lib/libC2D2.so|c189d8794a261824b8fdeca4e65d63eb92c0cc0a
-vendor/lib/libCB.so|c704622e46d0cd531d7774bdeb24a0134d83b773
-vendor/lib/libOpenCL.so|6fe1ec3442653efedf49f64aa9301e0ed91abac0
-vendor/lib/libadreno_utils.so|1fd9e4a6dbfd6370acbb1ebdfaf39724fb78bd85
-vendor/lib/libc2d30_bltlib.so|0baf85bbde259bd0bc76425d7b5b09760761471d
-vendor/lib/libgsl.so|d80a4f39925ccc52eb008fc75ddc1d4c0a0cb46f
-vendor/lib/libllvm-glnext.so|15294168ecedde216843aa03192957c45c824480
-vendor/lib/libllvm-qcom.so|8f24d6b19e0337f3f267428f8d5c078ae80313ae
-vendor/lib/libpvr.so|0a2a0c25643abb00617acf5b8e42afefbcb34554
-vendor/lib64/egl/eglSubDriverAndroid.so|d7e3af7f2f08c6a6d311f32ce1dc6646e054bb26
-vendor/lib64/egl/libEGL_adreno.so|73c8bc42d4f097156508ad501b3affcd8bfb1e55
-vendor/lib64/egl/libGLESv1_CM_adreno.so|2c60e39e06eb18eac2db775021d5ed45da92fa54
-vendor/lib64/egl/libGLESv2_adreno.so|ac6866dbb9a1bc7a7c365e2e799117ddc9e711f8
-vendor/lib64/egl/libQTapGLES.so|aa7f8f3a5a33a54408368775cf79af63dca2c91a
-vendor/lib64/egl/libq3dtools_adreno.so|00566ccecfd29bd5c79d631c0d5ccadd0ee7446e
-vendor/lib64/egl/libq3dtools_esx.so|23dad56ed76fdcece3366018a401f97fee070559
-vendor/lib64/libC2D2.so|53db84268b65d20226e1daf5f7a55d3d2140b041
-vendor/lib64/libCB.so|c3d2009611209569e8dfa6ab25771ba6a366c41d
-vendor/lib64/libOpenCL.so|7e6133e888f5bf542940f8c9fbe3eae0ddf21aca
-vendor/lib64/libadreno_utils.so|ce9c2afabfd71d3d3b6a914a63aa0da3e0cc8883
-vendor/lib64/libc2d30_bltlib.so|29017987444fe077f1bac00d18f82a1a6900a3ad
-vendor/lib64/libgsl.so|1ecb89ffd26025de4d277e33152e677222a41d0c
-vendor/lib64/libllvm-glnext.so|832d47ac513eed63eea01825f0224260d85906c5
-vendor/lib64/libllvm-qcom.so|515b23b0e1ebf2b73a9380d89739a55fe6e88a5c
-vendor/lib64/libpvr.so|a15c61aff68787c4abb8f0ec61c5459b687a29e4
+# Graphics - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/egl/eglSubDriverAndroid.so|42f582a943d194056f3265e4546d67bfcf346429
+vendor/lib/egl/libEGL_adreno.so|9b2494abe687f481a349e177bd4864bd8a84375b
+vendor/lib/egl/libGLESv1_CM_adreno.so|b94ba8188a14dd262abac1b8d667bce3319cf344
+vendor/lib/egl/libGLESv2_adreno.so|90816e83d2ba82a8705493f6c18a3003c21781c6
+vendor/lib/egl/libq3dtools_adreno.so|2ac81ee05dd4afb34ef6e56342ee1757f2db1409
+vendor/lib/egl/libq3dtools_esx.so|6f52953bfbf95efe02651fe3ba584ab744776d26
+vendor/lib/libC2D2.so|267be7bd6768fa3b9bed2b9a42062cb5a77ca59b
+vendor/lib/libCB.so|24383565bced1679223ce138246a24391a2679e6
+vendor/lib/libOpenCL.so|d1dfd4bf9234ff6ee44ca55b4740181d84d982aa
+vendor/lib/libadreno_utils.so|f1f1ab4827e8eede3fe8224c53138241e57f6db0
+vendor/lib/libc2d30_bltlib.so|950c705e6dbc02b646a0129e66e94e192f5cd87f
+vendor/lib/libgsl.so|a174046d1e4b903a628e45ecce7622c0f235b71d
+vendor/lib/libllvm-glnext.so|c5b192351c709df265ca02dd599d10122cfb2942
+vendor/lib/libllvm-qcom.so|017930e10c46d3f7688e123607e4cf48aa28caec
+vendor/lib/libpvr.so|f906eeafbfc4012b78e8447b75b12dc737a4dd51
+vendor/lib64/egl/eglSubDriverAndroid.so|aa2cd4ef63e7a5395c5f82b7d02e3a93b80b103d
+vendor/lib64/egl/libEGL_adreno.so|b63a4e8b532211787d414f92cdb5fcaba7f69e27
+vendor/lib64/egl/libGLESv1_CM_adreno.so|e2e8a079e680bf92f686fb79146651c158f6e130
+vendor/lib64/egl/libGLESv2_adreno.so|5a39aabc56367faeca9d7be96289970fe5b34b36
+vendor/lib64/egl/libq3dtools_adreno.so|046be35d03cbea2c73a1339eefa1bffc87ab6ebc
+vendor/lib64/egl/libq3dtools_esx.so|2df63a18ea3d292bfd1839f9320c221d62337701
+vendor/lib64/libC2D2.so|6fb775e393ce7161b30e3a71fa0f320e86374425
+vendor/lib64/libCB.so|be2f05463e34844c166bd363cb1a40a37ded21b3
+vendor/lib64/libOpenCL.so|4518386e348bae31e003e05683435e85e1922cdf
+vendor/lib64/libadreno_utils.so|2dc4cd2e6a2bfec16c07c6e65e7b8a794558f5d1
+vendor/lib64/libc2d30_bltlib.so|aa37c84cf6cc1e1ac670b433c97d0bf41308f9ca
+vendor/lib64/libgsl.so|bb8f1206dd528e7ff3b0630c98f58e93a003f8b6
+vendor/lib64/libllvm-glnext.so|84929b503b33cce98df496a4fc05e4ae01d09286
+vendor/lib64/libllvm-qcom.so|d3e4faf468399db8412fa05cce01ba191450addd
+vendor/lib64/libpvr.so|e89cb16c03c676623230b4de15deb6549bf15e8b
 
-# Graphics (DRM) - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/libsdedrm.so|8b3008da164f7ebb9299ce26225ff2918d0b64b7
-vendor/lib64/libsdedrm.so|708b26167770d32b68fb9a446f84a1f555e62562
+# Graphics (DRM) - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/libsdedrm.so|c583f4ddabdaa54e208494edebb070995585b1ba
+vendor/lib64/libsdedrm.so|69dff7095b9e46098ddcfe815847b473789ecbc1
 
 # Graphics (Firmware)
 vendor/firmware/a610_zap.b00
@@ -2884,39 +2882,33 @@ vendor/firmware/a640_gmu.bin
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
-# Graphics (HDR) - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/libhdr_tm.so|fee449a6d23d968fcf4c681c1af311fa9b818b5b
-vendor/lib64/libhdr_tm.so|f9c5ca05a94ac39655ef95ecfe7c2816a56ae434
+# Graphics (HDR) - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/libhdr_tm.so|e8697773d1868876f36e98dc68500919668c9acb
+vendor/lib64/libhdr_tm.so|e4638c3bf21685b84650c5858bafe384ab2118ff
 
-# Graphics (Renderscript) - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/libRSDriver_adreno.so|fe6fb5fab0f2f69ff1779e03c2ed83f1149935a2
-vendor/lib/libbccQTI.so|0be327b62b993d09953fc0758fbf19672d58d3ec
-vendor/lib/librs_adreno.so|11eaa78d76d9f0e5f34ce5db2b08d5039171e4c9
-vendor/lib/librs_adreno_sha1.so|17a2c3090312905147360713f30b7e5740478e71
-vendor/lib64/libRSDriver_adreno.so|be6708df68503eba85c35101029b50938bf181b6
-vendor/lib64/libbccQTI.so|44d1fef80ee78339264588f53696d9c2bbfaff06
-vendor/lib64/librs_adreno.so|71affd7d82629fd21ad8ed553f0def43b4f664ee
-vendor/lib64/librs_adreno_sha1.so|14a13f6fd3b165fe1283fca28be90c3b01b0fe06
+# Graphics (Renderscript) - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/librs_adreno.so|1e9be03d1fb230df72277350a6d0ce6a1e21bc20
+vendor/lib64/librs_adreno.so|c915361633f7d32f27ab627a0e4400e25a0a5c43
 
-# Graphics (SDM) - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/libqseed3.so|6af6220f98696503a88428b60d44b8fedba108d3
-vendor/lib/libsdm-color.so|74526f64a194ee18ca2270a0d1840233fe2097e2
-vendor/lib/libsdm-colormgr-algo.so|e83694e4f574f3ce891e5425c5e68fc5259abac2
-vendor/lib/libsdm-diag.so|67ff861037edf28f4adc2f681dc122db727943f5
-vendor/lib/libsdm-disp-vndapis.so|1ec2679b62e468b37c00a6279c14dc8cdd6cc896
-vendor/lib/libsdmextension.so|1c4b411e2ce84f63b98513b730ab78e9c51c87ee
-vendor/lib/libtinyxml2_1.so|67c19b3e2721fe038ac303f7fbb84b2e3d37bf80
-vendor/lib64/libqseed3.so|c879922fd17ba70d515d367c787a98d2b407d141
-vendor/lib64/libsdm-color.so|b2f3922f04b886c44909d47493691b00c92ab606
-vendor/lib64/libsdm-colormgr-algo.so|4c88231e8a015f2abf310980c49e3f6c976ea205
-vendor/lib64/libsdm-diag.so|afb39df8e43863d6f0af8ebe52e0ea250ddd5cfb
-vendor/lib64/libsdm-disp-vndapis.so|dea0a834b300e4e68e87874e4878e39ee2f7e9f8
-vendor/lib64/libsdmextension.so|d073aa4234c0f97775b4a8256591b6ded4c15892
-vendor/lib64/libtinyxml2_1.so|0061bbae0a73101c9d5fc6a8d99c69674e265d6e
+# Graphics (SDM) - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/libqseed3.so|4bd5267c3a360de23a65cdb8b3996191851e9648
+vendor/lib/libsdm-color.so|6a4d79c1cc79809afa72baddac9e5f23c6a50cec
+vendor/lib/libsdm-colormgr-algo.so|881ffdf26992858dcc3ac6024cf1c6deeaed0cfe
+vendor/lib/libsdm-diag.so|d173de1d03f266e8e38d81eb9e08b78d4c180c70
+vendor/lib/libsdm-disp-vndapis.so|2aa9e2c14b069b7acbe339499f3a35714dcc5c8a
+vendor/lib/libsdmextension.so|e222fb7365ab2845da4533f5b259f7b829af17fa
+vendor/lib/libtinyxml2_1.so|f00b8f6218271d57fd1fb67b192db956e42e66fb
+vendor/lib64/libqseed3.so|1395834daf3c6cd07acbdbc44110decb3be362c2
+vendor/lib64/libsdm-color.so|afd10b2103bed34c16ce00893d4e58fd779d05ea
+vendor/lib64/libsdm-colormgr-algo.so|11b65733d87ff65633a5fe8f4207dde12391625c
+vendor/lib64/libsdm-diag.so|55dafc05ba68666f10412a534f7122d7f45bf403
+vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
+vendor/lib64/libsdmextension.so|d9cbfa43999c86018c84798b2b6819781ae87077
+vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
-# Graphics (Vulkan) - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
-vendor/lib/hw/vulkan.trinket.so|d19d68f070172e1da6a5a2a9b83b5707de52deb6
-vendor/lib64/hw/vulkan.trinket.so|86dee35ca0c3bce5b9280eb8a89f5baee1aa9c41
+# Graphics (Vulkan) - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/hw/vulkan.adreno.so|6fa661ecbf23528f151d1c00a2c98fb5d55e2b06
+vendor/lib64/hw/vulkan.adreno.so|16e0687045e23546d901c2a5bd1c96b8bcea805a
 
 # Health
 vendor/bin/hw/android.hardware.health@2.0-service.oppo
