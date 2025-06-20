@@ -42,14 +42,6 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
-# Graphics
-debug.egl.hw=0
-debug.mdpcomp.logs=0
-persist.demo.hdmirotationlock=false
-ro.hardware.egl=adreno
-ro.hardware.vulkan=adreno
-ro.opengles.version=196610
-
 # Hwui
 ro.hwui.drop_shadow_cache_size=6
 ro.hwui.gradient_cache_size=1
@@ -120,7 +112,6 @@ telephony.lteOnCdmaDevice=1
 # Surfaceflinger
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
-debug.sf.hw=0
 debug.sf.latch_unsignaled=1
 persist.sys.sf.color_saturation=1.0
 
