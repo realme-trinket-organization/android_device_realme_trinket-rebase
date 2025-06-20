@@ -2602,11 +2602,11 @@ vendor/lib64/libcdsp_default_listener.so|c639e68a44537450a7aabb3549ac9edb5b94064
 vendor/lib64/libcdsprpc.so|9b115f42799ffb751e1f81d216b8851bf0b03cbf
 vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
 
-# Charger
-vendor/bin/hvdcp_opti
-vendor/bin/init.qti.chg_policy.sh
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
-vendor/etc/charger_fstab.qti
+# Charger - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hvdcp_opti|5af07727a96e46828e744656fac3b275b6eec08b
+vendor/bin/init.qti.chg_policy.sh|b1301822b93f588c735fa86edc707c47340d0736
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
+vendor/etc/charger_fstab.qti|8464c139d93f05e86ff9c9d31b3e8617b8d9476e
 
 # CNE - from ginkgo-user 10 QKQ1.200114.002 20.7.9 release-keys
 product/framework/com.quicinc.cne.api-V1.1-java.jar|207b66fb9d79b4f06e0a67a0e82c19c1f3b2d210
