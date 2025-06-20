@@ -2934,17 +2934,15 @@ vendor/lib64/libpvr.so|e89cb16c03c676623230b4de15deb6549bf15e8b
 vendor/lib/libsdedrm.so|c583f4ddabdaa54e208494edebb070995585b1ba
 vendor/lib64/libsdedrm.so|69dff7095b9e46098ddcfe815847b473789ecbc1
 
-# Graphics (Firmware)
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.elf
-vendor/firmware/a610_zap.mdt
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
+# Graphics (Firmware) - from RMX2050 RKQ1.200903.002
+vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
+vendor/firmware/a610_zap.b01|95173a48a40c64705fe7ba9ae078effa10a83519
+vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
+vendor/firmware/a610_zap.elf|2d60aa21f75df53551c29724e1c41446038c00f5
+vendor/firmware/a610_zap.mdt|006fbd60c4f0be1d672a3796130a66b7103efcb8
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
 
 # Graphics (HDR) - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/lib/libhdr_tm.so|e8697773d1868876f36e98dc68500919668c9acb
