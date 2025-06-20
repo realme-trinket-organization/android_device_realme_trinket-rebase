@@ -202,7 +202,6 @@ vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libswvdec.so
-vendor/lib64/libsysmon_cdsp_skel.so
 
 # Camera algo
 vendor/bin/hw/vendor.oppo.hardware.camera.oppoAlgoProcessService@1.0-service
@@ -2571,12 +2570,19 @@ vendor/lib64/libcacertclient.so|90281ef665d6a66ad7aa0806d97c20866fe1a83d
 vendor/lib64/libjnihelper.so|fb8690fbb5b8fbb97ded1bd8d4f87285ec74cf41
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so|398e5510db4d739de008b7230aa6e688d6c51a8a
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
+# CDSP - from RMX2050 RKQ1.200903.002
+vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdfw.so|50cc59e5352081c96d59adbfad61276a64bda45b
+vendor/lib/libcdfw_remote_api.so|0cafadaa390d782a2650949da1d4bab33de149cb
+vendor/lib/libcdsp_default_listener.so|3af8e9fbe0b154574ac0a709d1af401960922471
+vendor/lib/libcdsprpc.so|24564535b3e033e624c101146de63ae7a3ff707f
+vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
+vendor/lib64/libcdfw.so|cfd91b5f028f9ab050f15f265f60f52cca7e42ad
+vendor/lib64/libcdfw_remote_api.so|2939e767c15fd965322d6e11045fa3fb851b29d4
+vendor/lib64/libcdsp_default_listener.so|c639e68a44537450a7aabb3549ac9edb5b940641
+vendor/lib64/libcdsprpc.so|9b115f42799ffb751e1f81d216b8851bf0b03cbf
+vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
 
 # Charger
 vendor/bin/hvdcp_opti
@@ -2923,7 +2929,6 @@ vendor/firmware/ipa_fws.mdt
 # Init scripts - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/etc/init/init.vendor.sensors.rc|76af799ee1c3b4a7fd0a29f1cb133e520e9721f2
 vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc|96b08f4e97ef20e20a8d7f89212a5549abe66666
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
 vendor/etc/init/vendor.sensors.qti.rc|f34fc966af816b50f10ae7520b33863961a14478
 
 # Keystore
