@@ -7,3 +7,6 @@ persist.vendor.service.bt.iotinfo.report.enable=true
 
 # CNE
 persist.vendor.cne.feature=1
+
+# Media
+vendor.mm.enable.qcom_parser=47054591

@@ -136,9 +136,6 @@ persist.vendor.ims.disableQXDMLogs=0
 persist.vendor.ims.rtp.enableqxdm=3
 persist.vendor.ims.vt.enableadb=3
 
-# Media
-vendor.mm.enable.qcom_parser=47054591
-
 # PASR
 vendor.power.pasr.enabled=false
 
