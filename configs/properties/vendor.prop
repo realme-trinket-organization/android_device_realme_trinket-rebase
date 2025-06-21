@@ -81,6 +81,9 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 ro.vendor.bluetooth.wipower=false
 vendor.qcom.bluetooth.soc=cherokee
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
 # Data modules
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true

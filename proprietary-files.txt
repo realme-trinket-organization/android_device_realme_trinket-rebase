@@ -3000,17 +3000,17 @@ vendor/lib64/vendor.qti.hardware.iop@2.0.so|a99da96aa7abf8b9a4cb950113d7fe4ccbe4
 # IRQ balance - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
 
-# Keystore
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
+# Keymaster - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|8de64be44b03d77d6f9a0bc62cd7019e21e20735
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib/libkeymasterdeviceutils.so|50332d5f280a4851f4c99a9b34d068f72b555c7f
+vendor/lib/libkeymasterprovision.so|db70bf7e18796297c96c7f95a56bcf762bd7a911
+vendor/lib/libkeymasterutils.so|aeb984222fbd7d6881f9915a5ad1a9ab828c862b
+vendor/lib/libqtikeymaster4.so|510cb3350ab7f58f981c90d21887f0f59044c43f
+vendor/lib64/libkeymasterdeviceutils.so|e18e85743b559afd0a0638568ba149bd045f8250
+vendor/lib64/libkeymasterprovision.so|8ca3e21fb270f6ef9075fbf93c9263f24fc3d0c4
+vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
+vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.trinket.so
