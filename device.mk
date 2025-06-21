@@ -269,10 +269,6 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
-# Neural Network
-PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.2.vendor
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
