@@ -117,17 +117,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.neuralnetworks</name>
-        <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>qti-default</instance>
-            <instance>qti-dsp</instance>
-            <instance>qti-gpu</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
