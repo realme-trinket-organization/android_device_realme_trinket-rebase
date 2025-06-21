@@ -3163,25 +3163,25 @@ vendor/bin/pm-service|951e322c67132fe8826648e4fda9ddf5e4304e8a
 vendor/lib/libperipheral_client.so|4f4700270730d4043580a1e76566fd0124b01e18
 vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
 
-# Postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/libdisplayqos.so
-vendor/lib/libdpps.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.color@1.3.so
-vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdpps.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Postprocessing - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.display.color@1.0-service|ce61a8290f57c5d759280038e6cfd3f7db887269
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/libdisp-aba.so|3f78e36e0a16668a45462070e4243bbdcf1bcdbb
+vendor/lib/libdisplayqos.so|3937fe7575fa86815e2f920a0fe0b4c0cbe910d3
+vendor/lib/libdpps.so|462677d0802fafbf78ce0efacd0a823273124911
+vendor/lib/vendor.display.color@1.0.so|640ab2b9c2f0077634ed74263c5558076d431203
+vendor/lib/vendor.display.color@1.1.so|732531bbea59f5c1a90f409350d290607189c47f
+vendor/lib/vendor.display.color@1.2.so|f1ea074c629f1fc27000efb44617f7e8386b12d4
+vendor/lib/vendor.display.color@1.3.so|1467fbb9cbbb331da846fd2bcc3e644b55723bd5
+vendor/lib/vendor.display.postproc@1.0.so|251c33b11743f5e24ca220b220da367996f3077b
+vendor/lib64/libdisp-aba.so|b7c8567c3079372479c85834ba1aab4e2eee5522
+vendor/lib64/libdisplayqos.so|13aa5350813e6b3b619ba26a4854e512302e2d97
+vendor/lib64/libdpps.so|589892b909afb835e9a953aa3dc530d552683961
+vendor/lib64/vendor.display.color@1.0.so|253cd210899ea79133c7b7b9d31429e4a8d43c32
+vendor/lib64/vendor.display.color@1.1.so|fe9b373785571bb890db27523b804dc7d4411bca
+vendor/lib64/vendor.display.color@1.2.so|f40eb8c9d39776c43448431d7c7f7ecc3e4506c3
+vendor/lib64/vendor.display.color@1.3.so|3fbe0a8a317789608848f35b39ed9bfb734f9ecc
+vendor/lib64/vendor.display.postproc@1.0.so|e56b66d744dd77bd87afbb30cab558acf15709fb
 
 # Qdutils
 vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
