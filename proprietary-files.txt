@@ -3113,6 +3113,32 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb23189966
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|8c85aec8456f69296722c10ae034bd228cd70be2
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so|711f50db51cd10607f9065998cac4521950c4d5a
 
+# Qseecom - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
+vendor/bin/qseecom_sample_client|7f3b75c74a0e687dc90822eda82318258e5bef84
+vendor/bin/qseecomd|20a32b1028869eba3cacb78d756a8c6f3a93b1f4
+vendor/etc/init/qseecomd.rc|9c3b9c649e2bb8959b14d0e1278a390ddb15dc5e
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
+vendor/lib/libQSEEComAPI.so|5b70afcfc2212d9d302b3a0cf972cedb4cffcedd
+vendor/lib/libcpion.so|9eb10ff7e3cdf64ca589aded420e6132f692f5c5
+vendor/lib/libdrmfs.so|69f26ddae69392302476a114cd6c920bc9b294a4
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|2af6072954c55b8d45f07bf8d4464db417d0a2a2
+vendor/lib64/libGPreqcancel.so|cef7983d5aceb03b4c422731c838ead1a8f3fed4
+vendor/lib64/libGPreqcancel_svc.so|99826a70059ec471bb20749d11f174245cb07d12
+vendor/lib64/libQSEEComAPI.so|435ce943184e3a2eb66ceb00371d0606fdcdcf30
+vendor/lib64/libSecureUILib.so|dfd3bbe30cc5f9412cfe6645566d45fef6a9cb61
+vendor/lib64/libStDrvInt.so|a166aeaeaeb70f12bc607ff7852e039ee5cb004f
+vendor/lib64/libdrmfs.so|6272b1ee826657dd1485f1ee131d3c2cac24383e
+vendor/lib64/libdrmtime.so|ede9099810fd40348af4138eed60b57a963e3182
+vendor/lib64/libqisl.so|529d7e20bb33147fe3404c1a58d266e49228046a
+vendor/lib64/librpmb.so|a71c4f5bd6df0744a09e951a1fe55213391b8acd
+vendor/lib64/libsecureui.so|7b73833815e852dca993641a91811c56fe3465fd
+vendor/lib64/libsecureui_svcsock.so|2232f56927964f10d41868919d94711930d50ed0
+vendor/lib64/libsi.so|4457f7a45bf2aa03a279d9662c0389d2df488b6f
+vendor/lib64/libssd.so|f7c0465c7bac31f247021afa401643a4e4f94137
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|6a6fb579bda236b1ed48982c38478f510786cc51
+
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
