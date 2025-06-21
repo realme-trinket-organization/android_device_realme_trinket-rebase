@@ -2976,14 +2976,14 @@ vendor/lib64/hw/vulkan.adreno.so|16e0687045e23546d901c2a5bd1c96b8bcea805a
 vendor/bin/hw/android.hardware.health@2.0-service.oppo
 vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
 
-# IPA
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
+# IPA - from RMX2050 RKQ1.200903.002
+vendor/firmware/ipa_fws.b00|aade3e72dc69e9649b73fa9363985c0997437854
+vendor/firmware/ipa_fws.b01|1707c0b81be17d3de24abf022db0ef3282afb393
+vendor/firmware/ipa_fws.b02|a4f15a2345382514ef64d40f58dbaa3f1e35c4e7
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.elf|e8812586b00768dfc502e82a8571c6da222687fd
+vendor/firmware/ipa_fws.mdt|6023a2b8533367aca7ec6a5b423021587a722439
 
 # Init scripts - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/etc/init/init.vendor.sensors.rc|76af799ee1c3b4a7fd0a29f1cb133e520e9721f2
