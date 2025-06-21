@@ -3118,24 +3118,44 @@ vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc|b34c1b9179c89cd47adc
 vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|4be4deb43cab58ef19d71ae3f5633f53543a30dd
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|e5affcf769b56e137e55f9fd40a2937c4629cddb
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
+# Perf - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|bcc0537ccf8e9c9b45c56d0f4b5da4064a5b6e4c
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
+vendor/etc/perf/perfboostsconfig.xml|145433bc48801ee0566e465cdea9ed1417da8ace
+vendor/etc/perf/perfconfigstore.xml|432034cfd7ab710f13554d97cc2f4f3d4f84f845
+vendor/etc/perf/targetconfig.xml|c5d0434e8e80a11c59dd841c12be2b61b7f98ed3
+vendor/etc/perf/targetresourceconfigs.xml|263f4b2e92eb66f38c1aed0add6a0062b1f33511
+vendor/lib/libperfconfig.so|a6e5536fad3158e78696efbb8ed8eb0cb7815e16
+vendor/lib/libperfgluelayer.so|52cf265b9dab53f798c8c48c70eee763e9543085
+vendor/lib/libperfioctl.so|42789bf7d53750d33f501a130e47e596332744fc
+vendor/lib/libqti-perfd-client.so|1b0c70391d684ad95c79bc24ecb5ac8096d39019
+vendor/lib/libqti-perfd.so|1870851617af7e1f87c95bfe77d375ba3f05d3d0
+vendor/lib/libqti-util.so|e0e2823d1f2414b171ed72245a147fef2b6a4e69
+vendor/lib64/libadaptlaunch.so|f63d64f33d118bc099bbd0415f987ad896a71e76
+vendor/lib64/libappclassifier.so|3b2993b72c86655f78a05315d5b31c21a6bd4194
+vendor/lib64/libgameoptfeature.so|c3a19ed4b8f088a97f1cd5cd0666770e59a70a70
+vendor/lib64/liblearningmodule.so|6f54dc6234d3cf6ccf5971c9748d2178ad087ea6
+vendor/lib64/liblmutils-ns.so|d4bd835c599b7b1060bfc219401b332264ef2a5c
+vendor/lib64/libmemperfd.so|934ef5ceeeba3e95c43803927dcf04cd94a58d64
+vendor/lib64/libmeters-ns.so|dd678805ec076cdc20dc2d871a03d19da200d6fe
+vendor/lib64/libmeters.so|d5c9a4605bd2f631d6b0eb3c3cbb1f5fb8629114
+vendor/lib64/libperfconfig.so|7c11b2e9ca8e93f0cc45ed73e57a8ec5829b082b
+vendor/lib64/libperfgluelayer.so|77c14d1868b52f759f122441b5df7e5fe1e278e1
+vendor/lib64/libperfioctl.so|7bf289a68671f675ded7fb62e561e59832983138
+vendor/lib64/libprekill.so|f164e534b7d8578715c8b4a616fddead8154c36a
+vendor/lib64/libqti-perfd-client.so|d6502c16ab4dd7642641b6a8cbb061847ff5cb2d
+vendor/lib64/libqti-perfd.so|22ae99db39f1be4d3602c657bb7a5d96457f02d8
+vendor/lib64/libqti-util.so|003df67dcd57aaa67b7e80ad2640555dcebe5287
+vendor/lib64/libreffeature.so|8a1244586b4eda3fc72596d14a4e8b2a055e6d0c
+
+# Perf configs - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/etc/lm/prekill/prekill_4GB.data|d44007e12419b7e433ab26d3534d104fa4a88b72
+vendor/etc/lm/prekill/prekill_6GB.data|dbf72257628f2da4979726b046377673cb33d6e8
+vendor/etc/lm/AdaptLaunchFeature.xml|ad4516342729e79a8914762c2737f7faa08b1e9d
+vendor/etc/lm/AppClassifierFeature.xml|69baba75bf7880a3bac99a9aefa2f97a047e9eea
+vendor/etc/lm/GameOptimizationFeature.xml|fd1e0dcf30bcc65d9705ba0caf1afe97680e83a7
+vendor/etc/lm/PreKillFeature.xml|b7895e1cea68e4ba13ebe147a1861658c68731ad
 
 # Peripheral manager
 vendor/bin/pm-proxy
