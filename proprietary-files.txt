@@ -3157,11 +3157,11 @@ vendor/etc/lm/AppClassifierFeature.xml|69baba75bf7880a3bac99a9aefa2f97a047e9eea
 vendor/etc/lm/GameOptimizationFeature.xml|fd1e0dcf30bcc65d9705ba0caf1afe97680e83a7
 vendor/etc/lm/PreKillFeature.xml|b7895e1cea68e4ba13ebe147a1861658c68731ad
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/pm-proxy|8e159d1fb25f5ee24cf94be8534b3bb8891831bc
+vendor/bin/pm-service|951e322c67132fe8826648e4fda9ddf5e4304e8a
+vendor/lib/libperipheral_client.so|4f4700270730d4043580a1e76566fd0124b01e18
+vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
 
 # Postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
