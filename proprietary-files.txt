@@ -3315,9 +3315,9 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db
 
-# Radio - from jasmine_sprout V11.0.28.0.QDIMIXM
--product/app/datastatusnotification/datastatusnotification.apk|272156d88ac5a05f76fcea7f1a31087e1acbcd85
-product/framework/qti-telephony-common.jar|5b1c23ce0d42e1b666d387eedde3444dd07e61bc
+# Radio - from laurel_sprout V12.0.26.0.RFQMIXM
+-system_ext/app/datastatusnotification/datastatusnotification.apk|6ccc42cab86e30dfd6d3d1ca6e87310c408ccb58
+system_ext/framework/qti-telephony-common.jar|f9f92bfd882cba6bca8feea7f2b5141f3d3a434b
 
 # Radio - IMS
 etc/permissions/com.qualcomm.qti.imscmservice.xml
