@@ -3516,10 +3516,10 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc|76447a61ad5529949365eeb
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so|12909e98a653abdb3540bdd444ca94be86d0bbe6
 vendor/lib64/vendor.qti.hardware.soter@1.0.so|9424d8a625bbc9e399597ecb0ac80402fae7782c
 
-# Subsystem restart
-vendor/bin/ssr_diag
-vendor/bin/ssr_setup
-vendor/bin/subsystem_ramdump
+# Subsystem restart - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/ssr_diag|616019a92f415382dfd927919bfe0af290225a06
+vendor/bin/ssr_setup|6a6530fac4dd6842036f2aecabc93ee8b01fb113
+vendor/bin/subsystem_ramdump|c979beb1cea52de0f81409bba5203ac8a58d7025
 
 # Thermal - from laurel_sprout-user 10 QKQ1.190910.002 V11.0.23.0.QFQMIXM release-keys
 vendor/bin/thermal-engine|532fd0c51f6e50ad3f83fdef69f3d0366e2df7b6
