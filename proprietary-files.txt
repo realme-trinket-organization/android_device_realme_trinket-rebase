@@ -3742,11 +3742,11 @@ vendor/firmware/tp/19743/nt_hltg_fw.bin
 vendor/firmware/tp/19743/nt_hltg_fw_mp.bin
 vendor/firmware/tp/19743/nt_hltg_fw_signed.bin
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted User Interface - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib/vendor.qti.hardware.tui_comm@1.0.so|37a9af9fbdf5e3ec24129037d6f2fc16317ade23
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
 
 # WiFi
 vendor/bin/cnss-daemon
