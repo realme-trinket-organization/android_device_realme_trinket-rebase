@@ -3705,16 +3705,15 @@ vendor/lib64/libGPTEE_vendor.so|a8896a022e2b977997a40be9c584ff778d25c0f9
 vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
 
-# Thermal - from laurel_sprout-user 10 QKQ1.190910.002 V11.0.23.0.QFQMIXM release-keys
-vendor/bin/thermal-engine|532fd0c51f6e50ad3f83fdef69f3d0366e2df7b6
+# Thermal - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/thermal-engine|c0f7dc730227266d9fbe01a4c730a1ee91a60254
 vendor/etc/thermal-engine-high.conf|646948a5d3a378feb1595c63c578407af6f70b90
 vendor/etc/thermal-engine-map.conf|8cee010443a42052353f3134894dc8d6b2280a23
 vendor/etc/thermal-engine-nolimits.conf|4ba48db70f7afd6f0e4387859c3ebe91ac723eb1
 vendor/etc/thermal-engine-normal.conf|c1be4316dbd1bba97f58e4f508abf0d20c375b9b
-vendor/etc/thermal-engine.conf|1721adec8d87b35e17fb1a52b3346a67a2006704
--vendor/lib/libthermalclient.so|c3aecc7610e8f5775a6f6af2ff7790bef74380a1
--vendor/lib64/libthermalclient.so|11f008e2a8fe51ca67637e7aaeefaf7f276a882c
-vendor/lib64/libthermalfeature.so|8306e4bc55a4b9c7cb52a19fed11a9f48a604444
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
+vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
