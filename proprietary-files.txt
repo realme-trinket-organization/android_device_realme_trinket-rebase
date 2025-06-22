@@ -3465,11 +3465,11 @@ vendor/etc/init/android.hardware.sensors@2.0-service.rc
 vendor/lib/android.hardware.sensors@2.0-impl.so
 vendor/lib64/android.hardware.sensors@2.0-impl.so
 
-# Servicetracker
-vendor/bin/hw/vendor.qti.hardware.servicetracker@1.1-service
-vendor/etc/init/vendor.qti.hardware.servicetracker@1.1-service.rc
-vendor/lib/hw/vendor.qti.hardware.servicetracker@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.1-impl.so
+# Servicetracker - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service|e9c628464a9979c52b473db0f747244255d338be
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc|7cf06148da895586c20aab7e6bd01b806d8128b6
+-vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml|40b6abd9b4be99dc5722eb60d71ee36764bf4ef3
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so|1a89d213aa916091553da5d0dccaed45594c706e
 
 # Snapdragon Computer Vision Engine
 vendor/bin/hw/vendor.qti.hardware.scve.objecttracker@1.0-service
