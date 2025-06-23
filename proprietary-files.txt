@@ -2944,15 +2944,6 @@ vendor/lib64/libkeymasterprovision.so|8ca3e21fb270f6ef9075fbf93c9263f24fc3d0c4
 vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
 vendor/lib64/libqtikeymaster4.so|a338e67abfd6facf66577f3c61404e46ec81669d
 
-# Listen
-vendor/lib/libadpcmdec.so
-vendor/lib/libgcs-calwrapper.so
-vendor/lib/libgcs-ipc.so
-vendor/lib/libgcs-osal.so
-vendor/lib/libgcs.so
-vendor/lib/liblistensoundmodel2.so
-vendor/lib/libsmwrapper.so
-
 # Media - from laurel_sprout V12.0.26.0.RFQMIXM
 vendor/lib/libAlacSwDec.so|ac8f651a2dc8228420f29116e2a9497e28906b40
 vendor/lib/libApeSwDec.so|f14f08a55b32cc252417e3970b1d2cb296d48fa0
