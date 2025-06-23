@@ -77,7 +77,7 @@ void set_device_info(const std::string device, const std::string model, const st
     };
 
     for (const auto &source : ro_props_default_source_order) {
-        set_ro_build_prop(source, "fingerprint", "realme/" + device + "/" + device + ":10/QKQ1.200209.002/1642670490:user/release-keys");
+        set_ro_build_prop(source, "fingerprint", "realme/" + device + "/" + device + ":10/QKQ1.200209.002/1669690933:user/release-keys");
 
         set_ro_product_prop(source, "device", device);
         set_ro_product_prop(source, "model", model);
