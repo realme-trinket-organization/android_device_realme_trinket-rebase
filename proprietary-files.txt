@@ -133,7 +133,9 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|02c17b0b77c14e2e69039b5fa9d74fbf4def7c16
 # Camera
 vendor/lib/hw/camera.trinket.so
 vendor/lib/libDxHdcp.so
+vendor/lib/libOPPORectify.so
 vendor/lib/libOccluDetect.so
+vendor/lib/libOppoPreviewBokeh.so
 vendor/lib/libPerfectlyClearCrux.so
 vendor/lib/libSNPE.so
 vendor/lib/libSTDualCamCaptureBokeh.so
@@ -163,16 +165,13 @@ vendor/lib/libmmqjpegdma.so
 vendor/lib/libmpbase.so
 vendor/lib/libnnp.so
 vendor/lib/libocam_common.so
+vendor/lib/liboppo_aisd.so
+vendor/lib/liboppo_platform_hwi.so
 vendor/lib/libremosaic_daemon.so
 vendor/lib/librpmbengclient.so
 vendor/lib/libseemore.so
 vendor/lib/libsnpe_dsp_domains_v2.so
 vendor/lib/libsnpeml.so
-vendor/lib/libsns_device_mode_stub.so
-vendor/lib/libsns_fastRPC_util.so
-vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/libsnsapi.so
-vendor/lib/libsnsdiaglog.so
 vendor/lib/libst_personblur.so
 vendor/lib/libst_segmentation.so
 vendor/lib/libstblur_capture_api.so
@@ -195,11 +194,6 @@ vendor/lib64/libmegvii_superiq.so
 vendor/lib64/libmpbase.so
 vendor/lib64/librpmbengclient.so
 vendor/lib64/libseemore.so
-vendor/lib64/libsns_device_mode_stub.so
-vendor/lib64/libsns_fastRPC_util.so
-vendor/lib64/libsns_low_lat_stream_stub.so
-vendor/lib64/libsnsapi.so
-vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libstface_fd_api.so
 vendor/lib64/libswvdec.so
 
@@ -2735,9 +2729,6 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44f
 # Fingerprint
 vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib/librpmbengclient.so
-vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/librpmbengclient.so
@@ -3014,16 +3005,13 @@ vendor/etc/init/vendor.oppo.hardware.hypnus@1.0-service.rc
 vendor/lib/hw/vendor.oppo.hardware.hypnus@1.0-impl.so
 vendor/lib/libhypnusclient.so
 vendor/lib/vendor.oppo.hardware.hypnus@1.0.so
+vendor/lib64/hw/vendor.oppo.hardware.hypnus@1.0-impl.so
 vendor/lib64/libhypnusclient.so
 vendor/lib64/vendor.oppo.hardware.hypnus@1.0.so
 
 # Oppo (Ktv)
 vendor/bin/hw/vendor.oppo.hardware.ktv@1.0-service
 vendor/etc/init/vendor.oppo.hardware.ktv@1.0-service.rc
-vendor/lib/libOPPORectify.so
-vendor/lib/libOppoPreviewBokeh.so
-vendor/lib/liboppo_aisd.so
-vendor/lib/liboppo_platform_hwi.so
 vendor/lib64/hw/vendor.oppo.hardware.ktv@1.0-impl.so
 vendor/lib64/vendor.oppo.hardware.ktv@1.0.so
 
@@ -3309,7 +3297,7 @@ vendor/radio/qcril_database/qcril.db
 -system_ext/app/datastatusnotification/datastatusnotification.apk|6ccc42cab86e30dfd6d3d1ca6e87310c408ccb58
 system_ext/framework/qti-telephony-common.jar|f9f92bfd882cba6bca8feea7f2b5141f3d3a434b
 
-# Radio - IMS
+# Radio (IMS)
 etc/permissions/com.qualcomm.qti.imscmservice.xml
 -product/app/imssettings/imssettings.apk
 -product/app/uceShimService/uceShimService.apk
@@ -3381,25 +3369,29 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
-# Radio - IMS - from phhusson
+# Radio (IMS) - from phhusson
 -product/priv-app/ims/ims.apk|7e7ceab1d2843dd71c920ae77587132c76763313
 
 # Sensors
-vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/init.qcom.sensors.sh
 vendor/bin/sensors.qti
-vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/sns_reg_config
-vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
+vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
+vendor/lib64/libsnsapi.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
+
+# Sensors calibrate
+product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
+vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc
+vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml
+vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
 # Sensor configs
@@ -3448,11 +3440,12 @@ vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/stk3x3x_0.json
 vendor/etc/sensors/config/tsl2540.json
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sns_reg_config
 
 # Sensors HAL
 vendor/bin/hw/android.hardware.sensors@2.0-service
 vendor/etc/init/android.hardware.sensors@2.0-service.rc
-vendor/lib/android.hardware.sensors@2.0-impl.so
 vendor/lib64/android.hardware.sensors@2.0-impl.so
 
 # Servicetracker - from laurel_sprout V12.0.26.0.RFQMIXM
