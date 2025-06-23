@@ -28,30 +28,23 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl \
     audio.a2dp.default \
     audio.r_submix.default \
-    audio.usb.default \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
-    libvolumelistener
-
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor
+    audio.usb.default
 
 PRODUCT_PACKAGES += \
     libbatterylistener \
     libcomprcapture \
     libexthwplugin \
-    liba2dpoffload \
     libhdmiedid \
     libhdmipassthru \
     libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
     libsndmonitor \
     libspkrprot \
+    libvolumelistener \
     libtinycompress
 
 PRODUCT_COPY_FILES += \
@@ -86,6 +79,12 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
@@ -424,6 +423,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.3-impl \
     sound_trigger.primary.trinket
 
 # Tetheroffload
