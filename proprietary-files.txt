@@ -3556,7 +3556,3 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a74
 
 # WiFi
 vendor/bin/cnss-daemon
-vendor/bin/wigighalsvc
-vendor/bin/wigignpt
-vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
-vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
