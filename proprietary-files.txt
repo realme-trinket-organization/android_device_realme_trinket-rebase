@@ -84,6 +84,19 @@ vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp
 vendor/etc/acdbdata/adsp_avs_config.acdb
 
+# Audio (configs)
+vendor/etc/audio_platform_info.xml
+vendor/etc/audio_platform_info_19631.xml
+vendor/etc/audio_tuning_mixer_tavil.txt
+vendor/etc/bluetooth_qti_audio_policy_configuration.xml
+vendor/etc/graphite_ipc_platform_info.xml
+vendor/etc/listen_platform_info.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_mixer_paths_qrd.xml
+vendor/etc/sound_trigger_mixer_paths_wcd9335.xml
+vendor/etc/sound_trigger_mixer_paths_wcd9340.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
