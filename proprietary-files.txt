@@ -62,12 +62,16 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so
 # Audio
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
+vendor/lib/libaudioalsa.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libaudcal.so
+vendor/lib64/libaudioalsa.so
+vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 
@@ -97,6 +101,14 @@ vendor/firmware/tfa98xx.cnt
 # Audio (fx)
 vendor/lib/soundfx/libasphere.so
 vendor/lib64/soundfx/libasphere.so
+
+# Audio (hardware)
+vendor/lib/hw/audio.primary.trinket.so:vendor/lib/hw/audio.primary.trinket-realme.so
+vendor/lib/libaudioEngineerTest.so
+vendor/lib/libaudio_log_utils.so
+vendor/lib64/hw/audio.primary.trinket.so:vendor/lib64/hw/audio.primary.trinket-realme.so
+vendor/lib64/libaudioEngineerTest.so
+vendor/lib64/libaudio_log_utils.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
