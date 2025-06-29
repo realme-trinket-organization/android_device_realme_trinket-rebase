@@ -31,10 +31,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-service \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
-    audio.primary.trinket \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -47,10 +45,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 PRODUCT_PACKAGES += \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
     liba2dpoffload \
     libhdmiedid \
+    libhdmipassthru \
     libhfp \
-    libsndmonitor
+    libsndmonitor \
+    libspkrprot \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
