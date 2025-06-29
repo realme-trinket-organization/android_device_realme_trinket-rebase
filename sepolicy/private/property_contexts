@@ -1,0 +1,3 @@
+# Camera
+ro.product.prjversion    u:object_r:exported_system_prop:s0
+ro.product.wtconfig      u:object_r:exported_system_prop:s0
