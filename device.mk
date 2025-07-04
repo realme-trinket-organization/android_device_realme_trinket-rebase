@@ -197,6 +197,8 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh \
     init.qti.dcvs.sh \
     init.recovery.qcom.rc \
     init.target.rc \
@@ -412,8 +414,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
     hardware/oppo \
-    vendor/nxp/opensource/pn5xx \
-    vendor/qcom/opensource/usb/etc
+    vendor/nxp/opensource/pn5xx
 
 # Soundtrigger
 PRODUCT_PACKAGES += \
@@ -438,10 +439,6 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service
-
-PRODUCT_PACKAGES += \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh
 
 # Vibrator
 PRODUCT_PACKAGES += \
