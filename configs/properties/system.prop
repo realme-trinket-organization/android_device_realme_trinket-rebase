@@ -22,9 +22,6 @@ use.voice.path.for.pcm.voip=true
 persist.vendor.bluetooth.modem_nv_support=true
 persist.vendor.btstack.aac_frm_ctl.enabled=true
 
-# Camera
-ro.build.flavor=trinket-user
-
 # Crypto
 ro.crypto.allow_encrypt_override=true
 ro.crypto.volume.filenames_mode=aes-256-cts
