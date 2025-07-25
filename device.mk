@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     libcomprcapture \
     libexthwplugin \
     libhdmiedid \
-    libhdmipassthru \
     libhfp \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -183,7 +182,7 @@ PRODUCT_COPY_FILES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
+    android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
     libhidltransport \
     libhidltransport.vendor \
@@ -284,8 +283,6 @@ PRODUCT_COPY_FILES += \
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
-    libextmedia_jni \
-    libhypv_intercept \
     libmm-omxcore \
     libOmxCore \
     libOmxAacEnc \
@@ -456,7 +453,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     hostapd \
-    libqsap_sdk \
     libwifi-hal-qcom \
     libwpa_client \
     wcnss_service \
