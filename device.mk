@@ -151,7 +151,8 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.oppo
+    android.hardware.biometrics.fingerprint@2.1-service.oppo \
+    android.hardware.biometrics.fingerprint@2.3-service.rbs
 
 # fwk-detect
 PRODUCT_PACKAGES += \
@@ -420,6 +421,7 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
+    hardware/egistec/fingerprint \
     hardware/oppo
 
 # Soundtrigger
