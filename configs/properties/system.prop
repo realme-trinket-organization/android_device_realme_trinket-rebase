@@ -54,11 +54,6 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.texture_cache_flushrate=0.4
 ro.hwui.texture_cache_size=72
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # Iwlan
 persist.data.iwlan.enable=true
 persist.data.iwlan.rekey=4294967295
@@ -85,28 +80,6 @@ qcom.hw.aac.encoder=true
 
 # Netflix
 ro.netflix.bsp_rev=Q6125-17995-1
-
-# Radio
-DEVICE_PROVISIONED=1
-gsm.lte.ca.support=1
-persist.radio.atfwd.start=false
-persist.radio.custom_exp_ecc=1
-persist.radio.multisim.config=dsds
-persist.rild.nitz_long_ons_0=
-persist.rild.nitz_long_ons_1=
-persist.rild.nitz_long_ons_2=
-persist.rild.nitz_long_ons_3=
-persist.rild.nitz_plmn=
-persist.rild.nitz_short_ons_0=
-persist.rild.nitz_short_ons_1=
-persist.rild.nitz_short_ons_2=
-persist.rild.nitz_short_ons_3=
-ril.subscription.types=NV,RUIM
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-ro.rf_version=W_G_L_19631
-ro.telephony.default_network=22,22
-ro.telephony.iwlan_operation_mode=legacy
-telephony.lteOnCdmaDevice=1
 
 # Surfaceflinger
 debug.renderengine.backend=threaded
