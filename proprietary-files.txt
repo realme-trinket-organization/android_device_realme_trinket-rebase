@@ -2788,6 +2788,7 @@ vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib/librpmbengclient.so
 vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/hw/libets_teeclient_v2.so
 vendor/lib64/android.frameworks.fingerprintservice@1.0.so
 vendor/lib64/libRbsFlow.so
 vendor/lib64/librpmbengclient.so
@@ -2797,10 +2798,6 @@ vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # Fingerprint - from motorola/troika_retail/troika_sprout:10/QSBS30.62-17-17-10/169a7:user/release-keys
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.rbs|ad879e7ed06f50c804e79fb9312614c4fdef49e5
-
-# Fingerprint - from trinket-user 9 PKQ1.190616.001 eng.root.20200515.044412 release-keys
-vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rbs|36f15f53db8aa8c10898f8ff063e687b9501287c
-vendor/lib64/hw/libets_teeclient_v2.so|43d9cbdec565d041b21409a055640cbeca48d311
 
 # Fingerprint firmware
 vendor/firmware/f_1511.b00

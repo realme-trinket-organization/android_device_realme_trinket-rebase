@@ -167,7 +167,6 @@ on property:persist.sys.fp.vendor=et520
     setprop ro.boot.product.hardware.sku egis
 
     enable vendor.fps_hal.egis
-    enable fps_hal.egis
 
 service diag_mdlog_start /vendor/bin/diag_mdlog -c -u
     override
@@ -210,15 +209,6 @@ service vendor.cnss_diag /system/vendor/bin/cnss_diag -q -f -t HELIUM
     user system
     group system wifi inet sdcard_rw media_rw diag
     oneshot
-    disabled
-
-service fps_hal.egis /vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rbs
-    # "class hal" causes a race condition on some devices due to files created
-    # in /data. As a workaround, postpone startup until later in boot once
-    # /data is mounted.
-    class late_start
-    user system
-    group system input
     disabled
 
 service vendor.fps_hal.egis /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.rbs
