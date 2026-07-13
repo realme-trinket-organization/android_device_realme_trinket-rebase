@@ -71,21 +71,6 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-persist.vendor.bluetooth.a2dp.hal.implementation=true
-persist.vendor.bluetooth.modem_nv_support=true
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac
-persist.vendor.bt.a2dp.hal.implementation=true
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-persist.vendor.btstack.enable.splita2dp=true
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.btstack.enable.twsplussho=true
-persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-persist.vendor.qcom.bluetooth.enable.splita2dp=true
-persist.vendor.qcom.bluetooth.twsp_state.enabled=false
-persist.vendor.service.bt.iot.enablelogging=true
-persist.vendor.service.bt.iotinfo.report.enable=true
-ro.vendor.bluetooth.wipower=false
-vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
 # CNE
