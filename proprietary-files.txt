@@ -3205,11 +3205,9 @@ vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb23189966
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so|8c85aec8456f69296722c10ae034bd228cd70be2
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so|711f50db51cd10607f9065998cac4521950c4d5a
 
-# Qdutils
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+# Qdutils - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|59cefa436dba73efd4c5d506d0daa104a8b14a82
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|7db1d6865fb1589e9e7f97c3e1c59ae5ab505ead
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
