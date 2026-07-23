@@ -2745,17 +2745,12 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|b5075bcf4e885b01b25e7ec
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
 
-# Factory
-product/framework/vendor.qti.hardware.factory-V1.0-java.jar
-product/framework/vendor.qti.hardware.factory-V1.1-java.jar
-product/lib/vendor.qti.hardware.factory@1.0.so
-product/lib/vendor.qti.hardware.factory@1.1.so
-product/lib64/vendor.qti.hardware.factory@1.0.so
-product/lib64/vendor.qti.hardware.factory@1.1.so
-vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
-vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
-vendor/lib64/vendor.qti.hardware.factory@1.0.so
-vendor/lib64/vendor.qti.hardware.factory@1.1.so
+# Factory - from laurel_sprout V12.0.26.0.RFQMIXM
+vendor/bin/hw/vendor.qti.hardware.factory@1.0-service|93aaabd14ebc772c8d47bb424ae8b25656bc4970
+vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc|b47de7097f6b81ad6a6b05f70a2678861fda69fb
+vendor/etc/permissions/vendor.qti.hardware.factory.xml|bedb01aed43b95943ac60f80cf351742ccb4a072
+vendor/lib64/vendor.qti.hardware.factory@1.0.so|1840f0b0a54c666598eceb9fa1217373b850cc07
+vendor/lib64/vendor.qti.hardware.factory@1.1.so|433fa6e6c62b3c1b46d1e88e6a0eebe37b30f3e5
 
 # FM
 lib/fm_helium.so
